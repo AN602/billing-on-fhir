@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { extractCodesForEvidence } from "../billing/extractCodes.js";
+import { extractCodes, extractCodesForEvidence } from "../billing/extractCodes.js";
+import type { ClinicalEvidenceItem } from "../billing/dossierTypes.js";
 
 describe("extractCodesForEvidence", () => {
   it("extracts OPS and ICD-like codes", () => {
@@ -30,5 +31,55 @@ describe("extractCodesForEvidence", () => {
       extractedCodes: [],
     } as never);
     expect(codes.length).toBe(0);
+  });
+});
+
+describe("extractCodes needsReview fallback", () => {
+  function baseEvidenceItem(overrides: Partial<ClinicalEvidenceItem>): ClinicalEvidenceItem {
+    return {
+      id: "e-base",
+      source: { resourceType: "Composition", resourceRef: "Composition/c1" },
+      normalizedKind: "unknown",
+      billingRelevance: "high",
+      text: "No deterministic code in this text",
+      textSnippet: "No deterministic code",
+      extractedCodes: [],
+      ...overrides,
+    };
+  }
+
+  it("uses ICD-10-GM fallback for diagnosis evidence", () => {
+    const result = extractCodes([
+      baseEvidenceItem({ id: "diag-1", normalizedKind: "diagnosis_section" }),
+    ]);
+
+    expect(result.needsReview).toHaveLength(1);
+    expect(result.needsReview[0]?.system).toBe("ICD-10-GM");
+  });
+
+  it("uses OPS fallback for procedure evidence", () => {
+    const result = extractCodes([
+      baseEvidenceItem({ id: "proc-1", normalizedKind: "procedure_section" }),
+    ]);
+
+    expect(result.needsReview).toHaveLength(1);
+    expect(result.needsReview[0]?.system).toBe("OPS");
+  });
+
+  it("uses unknown fallback for ambiguous evidence kinds", () => {
+    const result = extractCodes([
+      baseEvidenceItem({ id: "amb-1", normalizedKind: "progress_note" }),
+    ]);
+
+    expect(result.needsReview).toHaveLength(1);
+    expect(result.needsReview[0]?.system).toBe("unknown");
+  });
+
+  it("does not add fallback for low relevance evidence", () => {
+    const result = extractCodes([
+      baseEvidenceItem({ id: "low-1", normalizedKind: "diagnosis_section", billingRelevance: "low" }),
+    ]);
+
+    expect(result.needsReview).toHaveLength(0);
   });
 });

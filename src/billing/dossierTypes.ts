@@ -50,8 +50,10 @@ export type EvidenceSource = {
   sectionCode?: string;
 };
 
+export type CodingSystem = "OPS" | "ICD-10-GM" | "unknown";
+
 export type CandidateCode = {
-  system: "OPS" | "ICD-10-GM";
+  system: CodingSystem;
   code?: string;
   label?: string;
   status: "explicit" | "inferred" | "needs_review";

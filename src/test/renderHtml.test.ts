@@ -51,4 +51,23 @@ describe("dossierToHtml", () => {
     expect(html).toContain('href="#candidate-ops-8-831-00-0"');
     expect(html).toContain("Linked codes:");
   });
+
+  it("links manual review evidence to needs review section", () => {
+    const dossier = buildFixtureDossier();
+    dossier.candidateCodes.explicit = [];
+    dossier.candidateCodes.needsReview = [
+      {
+        system: "unknown",
+        status: "needs_review",
+        method: "manual",
+        confidence: 0,
+        evidenceItemIds: ["ev-1"],
+      },
+    ];
+
+    const html = dossierToHtml(dossier);
+
+    expect(html).toContain('id="candidate-codes-needs-review"');
+    expect(html).toContain('href="#candidate-codes-needs-review"');
+  });
 });

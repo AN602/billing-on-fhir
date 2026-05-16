@@ -62,7 +62,7 @@ Pipeline:
 ### Change code extraction behavior
 
 - `src/config/codeRegexes.ts` - OPS/ICD regex patterns and helpers
-- `src/billing/extractCodes.ts` - candidate creation, dedupe, needs-review logic
+- `src/billing/extractCodes.ts` - candidate creation, dedupe, and kind-driven needs-review fallback logic (ICD/OPS/unknown)
 - `src/billing/llmCandidateExtractor.ts` - future inferred-code enrichment stub
 
 ### Change output format

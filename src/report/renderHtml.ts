@@ -100,15 +100,17 @@ function renderCandidateCodesSection(dossier: BillingDossier): {
   let index = 0;
 
   const groupsHtml = groups
-    .map((group) => {
+    .map((group, groupIndex) => {
+      const headingId =
+        group.title === "Needs Review" ? "candidate-codes-needs-review" : `candidate-codes-group-${groupIndex}`;
       if (!group.items.length) {
-        return `<h3>${esc(group.title)}</h3><p>None</p>`;
+        return `<h3 id="${esc(headingId)}">${esc(group.title)}</h3><p>None</p>`;
       }
 
       const itemsHtml = group.items
         .map((code) => {
           const anchorId = candidateAnchorId(code, index);
-          const internalHref = `#${anchorId}`;
+          const internalHref = code.status === "needs_review" && !code.code ? "#candidate-codes-needs-review" : `#${anchorId}`;
           const label = candidateLabel(code);
 
           for (const evidenceItemId of code.evidenceItemIds) {
@@ -118,11 +120,15 @@ function renderCandidateCodesSection(dossier: BillingDossier): {
           }
 
           index += 1;
-          return `<li id="${esc(anchorId)}">${esc(code.system)} <a href="${esc(codeSearchHref(code.code))}" target="_blank" rel="noopener noreferrer">${esc(code.code ?? code.label ?? "")}</a></li>`;
+          if (!code.code) {
+            return `<li id="${esc(anchorId)}">${esc(code.system)} ${esc(code.label ?? "manual review required")}</li>`;
+          }
+
+          return `<li id="${esc(anchorId)}">${esc(code.system)} <a href="${esc(codeSearchHref(code.code))}" target="_blank" rel="noopener noreferrer">${esc(code.code)}</a></li>`;
         })
         .join("");
 
-      return `<h3>${esc(group.title)}</h3><ul>${itemsHtml}</ul>`;
+      return `<h3 id="${esc(headingId)}">${esc(group.title)}</h3><ul>${itemsHtml}</ul>`;
     })
     .join("");
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T07:58:56.182Z",
+  "generatedAt": "2026-05-16T08:30:47.889Z",
   "input": {
     "filename": "./FHIR_example.json",
     "bundleType": "searchset",
@@ -194,24 +194,19 @@
     "inferred": [],
     "needsReview": [
       {
-        "system": "ICD-10-GM",
+        "system": "unknown",
         "status": "needs_review",
         "method": "manual",
         "confidence": 0,
         "evidenceItemIds": [
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-1",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-2",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-3",
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-5",
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-6",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-7",
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-8",
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-9",
-          "P07d7b164783836ba1b-section-1",
           "P07d7b164783836ba1b-section-2",
           "P125b783bd96b04e134-section-1",
           "P125b783bd96b04e134-section-2",
-          "P125b783bd96b04e134-section-3",
           "P1d43a21849805f023e-section-1",
           "P23a50ff2d0a01a9762-section-1",
           "P23a50ff2d0a01a9762-section-2",
@@ -234,8 +229,6 @@
           "Pb0d7f74ead284d7bb0-section-1",
           "Pb72533274aa0c3c2b9-section-1",
           "Pb72533274aa0c3c2b9-section-2",
-          "Pbc91154f2d8ccfcc37-section-1",
-          "Pbc91154f2d8ccfcc37-section-2",
           "Pbc91154f2d8ccfcc37-section-3",
           "Pbc91154f2d8ccfcc37-section-4",
           "Pbc91154f2d8ccfcc37-section-5",
@@ -258,13 +251,38 @@
           "Pd61fb6523f343a2d38-section-3",
           "Pe0de0b96fca67129db-section-1",
           "Pe0de0b96fca67129db-section-2",
-          "Pe0de0b96fca67129db-section-3",
           "Pe927044d6826a77e43-section-1",
           "Pfacfac944a90dfce52-section-1",
           "Pfacfac944a90dfce52-section-2",
           "Pfacfac944a90dfce52-section-3"
         ],
         "sourceText": "Sehr geehrte Kollegen und Kolleginnen, wir berichten über Herr Max Muster, geboren am 06.05.1968, der sich bei uns in stationärer Behandlung vom 12.10.2024 bis 20.10.2024 befand."
+      },
+      {
+        "system": "ICD-10-GM",
+        "status": "needs_review",
+        "method": "manual",
+        "confidence": 0,
+        "evidenceItemIds": [
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-2",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-3",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-7",
+          "Pbc91154f2d8ccfcc37-section-1",
+          "Pbc91154f2d8ccfcc37-section-2"
+        ],
+        "sourceText": "Primäres ZNS-Lymphom, ED 08.2024\n\nInitiale Symptomatik:\nVertikale Diplopie, Synkope, Halluzinationen, Hemiparese links, zentrale Fazialisparese rechts, Gangataxie\n\nInitiale Ausdehnung:\nStammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, temporopolar rechts\n\nSta"
+      },
+      {
+        "system": "OPS",
+        "status": "needs_review",
+        "method": "manual",
+        "confidence": 0,
+        "evidenceItemIds": [
+          "P07d7b164783836ba1b-section-1",
+          "P125b783bd96b04e134-section-3",
+          "Pe0de0b96fca67129db-section-3"
+        ],
+        "sourceText": "Konsil - Allgemeine Chirurgie"
       }
     ]
   },
