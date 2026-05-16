@@ -15,7 +15,11 @@
 
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import type { BillingDossier, ClinicalEvidenceItem } from "../billing/dossierTypes.js";
+import {
+  BILLING_RELEVANCE_META,
+  type BillingDossier,
+  type ClinicalEvidenceItem,
+} from "../billing/dossierTypes.js";
 import { formatDate } from "../util/dateUtils.js";
 
 function esc(value: unknown): string {
@@ -45,6 +49,17 @@ function codeSearchHref(code?: string): string {
   return `https://www.icd-code.de/suche/ops/recherche.html?sp=${encodeURIComponent(code)}`;
 }
 
+function renderBillingRelevanceLegend(): string {
+  const rows = Object.entries(BILLING_RELEVANCE_META)
+    .map(
+      ([value, meta]) =>
+        `<tr><td><code>${esc(value)}</code></td><td>${esc(meta.label)}</td><td>${esc(meta.description)}</td></tr>`,
+    )
+    .join("");
+
+  return `<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Value</th><th>Label</th><th>Description</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
 export function dossierToHtml(dossier: BillingDossier): string {
   const high = dossier.evidence.filter((item) => item.billingRelevance === "high");
   const medium = dossier.evidence.filter((item) => item.billingRelevance === "medium");
@@ -56,6 +71,11 @@ export function dossierToHtml(dossier: BillingDossier): string {
 <body>
 <h1>Billing Case Dossier</h1>
 <p>This prototype extracts billing-relevant evidence and candidate ICD/OPS codes from FHIR/TIPLU data. It does not produce legally final hospital billing codes.</p>
+
+<section id="billing-relevance-legend">
+<h2>Billing Relevance Levels</h2>
+${renderBillingRelevanceLegend()}
+</section>
 
 <section id="case-summary">
 <h2>Case Summary</h2>

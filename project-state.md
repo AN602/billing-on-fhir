@@ -67,8 +67,8 @@ Pipeline:
 
 ### Change output format
 
-- `src/report/renderJson.ts` - JSON serialization/file writing
-- `src/report/renderHtml.ts` - HTML sections/content/escaping
+- `src/report/renderJson.ts` - JSON serialization/file writing, including billing relevance legend metadata
+- `src/report/renderHtml.ts` - HTML sections/content/escaping, including billing relevance legend table text
 - `src/billing/dossierTypes.ts` - output schema changes
 
 ### Change CLI behavior

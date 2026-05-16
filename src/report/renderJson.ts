@@ -7,10 +7,17 @@
 
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import type { BillingDossier } from "../billing/dossierTypes.js";
+import { BILLING_RELEVANCE_META, type BillingDossier } from "../billing/dossierTypes.js";
 
 export function dossierToJson(dossier: BillingDossier): string {
-  return `${JSON.stringify(dossier, null, 2)}\n`;
+  return `${JSON.stringify(
+    {
+      ...dossier,
+      billingRelevanceLegend: BILLING_RELEVANCE_META,
+    },
+    null,
+    2,
+  )}\n`;
 }
 
 export async function renderJson(dossier: BillingDossier, outDir: string): Promise<string> {

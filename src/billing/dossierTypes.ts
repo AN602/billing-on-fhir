@@ -1,4 +1,23 @@
-export type BillingRelevance = "high" | "medium" | "low" | "ignore";
+export const BILLING_RELEVANCE_META = {
+  high: {
+    label: "High",
+    description: "Directly relevant for coding or billing decisions; review with priority.",
+  },
+  medium: {
+    label: "Medium",
+    description: "Potentially relevant context that may support coding when combined with other evidence.",
+  },
+  low: {
+    label: "Low",
+    description: "Mostly background or weakly billing-relevant information.",
+  },
+  ignore: {
+    label: "Ignore",
+    description: "Administrative or non-clinical content that is not used for billing evidence.",
+  },
+} as const;
+
+export type BillingRelevance = keyof typeof BILLING_RELEVANCE_META;
 
 export type NormalizedEvidenceKind =
   | "discharge_summary"

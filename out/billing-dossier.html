@@ -5,6 +5,11 @@
 <h1>Billing Case Dossier</h1>
 <p>This prototype extracts billing-relevant evidence and candidate ICD/OPS codes from FHIR/TIPLU data. It does not produce legally final hospital billing codes.</p>
 
+<section id="billing-relevance-legend">
+<h2>Billing Relevance Levels</h2>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Value</th><th>Label</th><th>Description</th></tr></thead><tbody><tr><td><code>high</code></td><td>High</td><td>Directly relevant for coding or billing decisions; review with priority.</td></tr><tr><td><code>medium</code></td><td>Medium</td><td>Potentially relevant context that may support coding when combined with other evidence.</td></tr><tr><td><code>low</code></td><td>Low</td><td>Mostly background or weakly billing-relevant information.</td></tr><tr><td><code>ignore</code></td><td>Ignore</td><td>Administrative or non-clinical content that is not used for billing evidence.</td></tr></tbody></table>
+</section>
+
 <section id="case-summary">
 <h2>Case Summary</h2>
 <p>Patient: Max Muster</p>
