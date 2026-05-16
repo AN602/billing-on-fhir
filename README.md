@@ -6,8 +6,18 @@ Project map for contributors: `project-state.md`
 
 ## Installation
 
+This project uses [Mise](https://mise.jdx.dev/getting-started.html) as a meta dependency/runtime installer. After installing Mise the runtime required by this project can be installed by running:
+
 ```bash
-yarn install
+mise install
+```
+
+If using Mise wants to be avoided looking into [mise.toml](./mise.toml) gives an overview about the used tooling.
+
+After tooling setup the project dependencies can be installed via:
+
+```bash
+yarn --immutable
 ```
 
 ## CLI usage
@@ -21,6 +31,8 @@ Example:
 ```bash
 yarn start ./FHIR_example.json --out ./out
 ```
+
+The CLI creates a HTML and JSON  dossier in the output folder. The HTML file is completely standalone and runs without any JS.
 
 ## Development fixtures
 
