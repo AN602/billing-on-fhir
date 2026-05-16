@@ -65,6 +65,8 @@ export function extractCodes(evidenceItems: ClinicalEvidenceItem[]): {
     const extracted = extractCodesForEvidence(item);
     explicit.push(...extracted);
 
+    // ToDo - this seems like not a good way of proposing the presence of an ICD code
+    // Requires more research and might be a good entrypoint for LLM based parsing as a fallback when regex fails
     if (!extracted.length && item.billingRelevance !== "low" && item.billingRelevance !== "ignore") {
       needsReview.push({
         system: "ICD-10-GM",

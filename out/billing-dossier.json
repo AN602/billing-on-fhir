@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T07:48:38.309Z",
+  "generatedAt": "2026-05-16T07:58:56.182Z",
   "input": {
     "filename": "./FHIR_example.json",
     "bundleType": "searchset",
@@ -3292,6 +3292,24 @@
       "Organization": 1,
       "Condition": 1,
       "Patient": 1
+    }
+  },
+  "billingRelevanceLegend": {
+    "high": {
+      "label": "High",
+      "description": "Directly relevant for coding or billing decisions; review with priority."
+    },
+    "medium": {
+      "label": "Medium",
+      "description": "Potentially relevant context that may support coding when combined with other evidence."
+    },
+    "low": {
+      "label": "Low",
+      "description": "Mostly background or weakly billing-relevant information."
+    },
+    "ignore": {
+      "label": "Ignore",
+      "description": "Administrative or non-clinical content that is not used for billing evidence."
     }
   }
 }

@@ -84,6 +84,7 @@ Pipeline:
 Existing test coverage includes:
 
 - `htmlToText`
+- `renderHtml`
 - `extractCodes`
 - `classifyComposition`
 - `normalizeComposition`
