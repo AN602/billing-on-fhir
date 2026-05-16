@@ -1,16 +1,126 @@
-// Core domain types for the billing dossier.
-//
-// Suggested concepts:
-// - BillingCaseDossier
-// - CaseSummary
-// - NormalizedClinicalDocument
-// - ClinicalEvidenceItem
-// - CandidateCode
-// - DataQualityWarning
-//
-// CandidateCode should distinguish explicit extraction from inference:
-// - explicit: directly found in native FHIR or text via regex
-// - inferred: suggested by NLP/LLM/terminology lookup
-// - needs_review: clinically relevant evidence without a safe code
-//
-// Every candidate code should point back to evidence item IDs for auditability.
+export type BillingRelevance = "high" | "medium" | "low" | "ignore";
+
+export type NormalizedEvidenceKind =
+  | "discharge_summary"
+  | "diagnosis_section"
+  | "procedure_section"
+  | "radiology_report"
+  | "medication_section"
+  | "planned_treatment"
+  | "consult_note"
+  | "lab_report_reference"
+  | "progress_note"
+  | "administrative_or_low_relevance"
+  | "unknown";
+
+export type DataQualityIssue = {
+  severity: "info" | "warning" | "error";
+  code: string;
+  message: string;
+  resourceRef?: string;
+};
+
+export type EvidenceSource = {
+  resourceType: string;
+  resourceId?: string;
+  resourceRef: string;
+  compositionId?: string;
+  compositionTitle?: string;
+  compositionDate?: string;
+  sectionTitle?: string;
+  sectionCode?: string;
+};
+
+export type CandidateCode = {
+  system: "OPS" | "ICD-10-GM";
+  code?: string;
+  label?: string;
+  status: "explicit" | "inferred" | "needs_review";
+  method: "native_fhir" | "regex" | "llm" | "manual";
+  confidence: number;
+  evidenceItemIds: string[];
+  sourceText?: string;
+};
+
+export type ClinicalEvidenceItem = {
+  id: string;
+  patientRef?: string;
+  encounterRef?: string;
+  source: EvidenceSource;
+  normalizedKind: NormalizedEvidenceKind;
+  billingRelevance: BillingRelevance;
+  text: string;
+  textSnippet: string;
+  extractedCodes: CandidateCode[];
+};
+
+export type InputSummary = {
+  filename: string;
+  bundleType?: string;
+  bundleTotal?: number;
+};
+
+export type PatientSummary = {
+  id?: string;
+  ref?: string;
+  name?: string;
+  gender?: string;
+  birthDate?: string;
+  identifiers: string[];
+};
+
+export type EncounterSummary = {
+  id?: string;
+  ref?: string;
+  status?: string;
+  class?: string;
+  type?: string;
+  periodStart?: string;
+  periodEnd?: string;
+  subjectRef?: string;
+  diagnosisRefs: string[];
+  serviceProviderRef?: string;
+};
+
+export type AccountSummary = {
+  id?: string;
+  ref?: string;
+  status?: string;
+  type?: string;
+  subjectRefs: string[];
+  servicePeriodStart?: string;
+  servicePeriodEnd?: string;
+};
+
+export type OrganizationSummary = { id?: string; ref?: string; name?: string };
+export type PractitionerSummary = { id?: string; ref?: string; name?: string };
+
+export type BillingCaseSummary = {
+  patient?: PatientSummary;
+  encounter?: EncounterSummary;
+  account?: AccountSummary;
+  organizations: OrganizationSummary[];
+  practitioners: PractitionerSummary[];
+};
+
+export type CandidateCodeSummary = {
+  explicit: CandidateCode[];
+  inferred: CandidateCode[];
+  needsReview: CandidateCode[];
+};
+
+export type BundleStats = {
+  entriesTotal: number;
+  entriesWithoutResource: number;
+  resourceTypeCounts: Record<string, number>;
+};
+
+export type BillingDossier = {
+  generatedAt: string;
+  input: InputSummary;
+  case: BillingCaseSummary;
+  candidateCodes: CandidateCodeSummary;
+  evidence: ClinicalEvidenceItem[];
+  dataQuality: DataQualityIssue[];
+  stats: BundleStats;
+};

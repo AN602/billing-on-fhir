@@ -49,7 +49,7 @@ Do not build a web app for the first prototype. A CLI that generates static HTML
 The tool must accept a path to a FHIR JSON file:
 
 ```bash
-fhir-billing-prototype ./FHIR_example.json --out ./out
+yarn start ./FHIR_example.json --out ./out
 ```
 
 Expected input:
@@ -60,7 +60,13 @@ Expected input:
 - Some entries may reference resources that are not present in the file
 - XHTML narrative in `Composition.section.text.div` must be converted to plain text
 
-The sample file used during development is:
+The canonical sample fixture used during development is:
+
+```txt
+FHIR_example.json
+```
+
+An additional reduced sample fixture is also available for resilience testing with missing references:
 
 ```txt
 FHIR_example-removed-Observation.json
@@ -1044,9 +1050,9 @@ Implement tests for:
 
 ### Golden File Test
 
-Create one integration test against the sample fixture:
+Create one integration test against the canonical sample fixture:
 
-- Input: FHIR example bundle
+- Input: `FHIR_example.json`
 - Output: dossier JSON
 - Assertions:
   - patient exists
@@ -1065,7 +1071,7 @@ A successful implementation must satisfy:
 ```bash
 yarn install
 yarn test
-yarn start ./FHIR_example-removed-Observation.json --out ./out
+yarn start ./FHIR_example.json --out ./out
 ```
 
 After running, these files must exist:

@@ -14,3 +14,15 @@
 // - 3-800
 // - 3-820
 // - 9-401.00
+
+export const OPS_REGEX = /(?<![A-Za-z0-9])\d-\d[0-9A-Za-z]{2,3}(?:\.[0-9A-Za-z]+)?(?![A-Za-z0-9])/g;
+
+export const ICD10_GM_REGEX = /(?<![A-Za-z0-9])(?:[A-TV-Z]\d{2})(?:\.\d{1,2})?(?:[A-Z!+*])?(?![A-Za-z0-9])/g;
+
+export function findOpsCodes(text: string): string[] {
+  return [...new Set(text.match(OPS_REGEX) ?? [])];
+}
+
+export function findIcdCodes(text: string): string[] {
+  return [...new Set(text.match(ICD10_GM_REGEX) ?? [])];
+}

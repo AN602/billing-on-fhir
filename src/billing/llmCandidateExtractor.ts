@@ -8,3 +8,9 @@
 // - Never treat LLM output as final billing coding.
 //
 // This file can remain unimplemented for the first prototype.
+
+import type { CandidateCode, ClinicalEvidenceItem } from "./dossierTypes.js";
+
+export async function llmCandidateExtractor(_evidence: ClinicalEvidenceItem[]): Promise<CandidateCode[]> {
+  return [];
+}

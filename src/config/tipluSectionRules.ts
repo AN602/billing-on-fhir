@@ -14,41 +14,80 @@
 //
 // Keep these rules data-only where possible.
 
-export const tipluSectionRules = [
+import type { BillingRelevance, NormalizedEvidenceKind } from "../billing/dossierTypes.js";
+
+export type TipluSectionRule = {
+  match: { sectionCode: string };
+  kind: NormalizedEvidenceKind;
+  billingRelevance: BillingRelevance;
+  extract: string[];
+};
+
+export const tipluSectionRules: TipluSectionRule[] = [
   {
     match: { sectionCode: "Hauptdiagnose" },
-    facet: "diagnosis",
+    kind: "diagnosis_section",
     billingRelevance: "high",
     extract: ["icd", "diagnosisText"],
   },
   {
     match: { sectionCode: "Nebendiagnosen" },
-    facet: "diagnosis",
+    kind: "diagnosis_section",
+    billingRelevance: "high",
+    extract: ["icd", "diagnosisText"],
+  },
+  {
+    match: { sectionCode: "Diagnosen" },
+    kind: "diagnosis_section",
+    billingRelevance: "high",
+    extract: ["icd", "diagnosisText"],
+  },
+  {
+    match: { sectionCode: "Weitere Diagnosen" },
+    kind: "diagnosis_section",
     billingRelevance: "high",
     extract: ["icd", "diagnosisText"],
   },
   {
     match: { sectionCode: "Weitere Prozeduren" },
-    facet: "procedure",
+    kind: "procedure_section",
     billingRelevance: "high",
     extract: ["ops"],
   },
   {
+    match: { sectionCode: "DurchgefuehrteMassnahmen" },
+    kind: "procedure_section",
+    billingRelevance: "medium",
+    extract: ["ops", "procedureText"],
+  },
+  {
     match: { sectionCode: "Aufnahmemedikation" },
-    facet: "medication",
+    kind: "medication_section",
     billingRelevance: "medium",
     extract: ["medicationText"],
   },
   {
     match: { sectionCode: "Therapieempfehlung" },
-    facet: "plannedTreatment",
+    kind: "planned_treatment",
     billingRelevance: "medium",
     extract: ["treatmentPlanText"],
   },
   {
     match: { sectionCode: "Bildgebungsbefunde" },
-    facet: "imaging",
+    kind: "radiology_report",
     billingRelevance: "medium",
     extract: ["ops", "diagnosticEvidence"],
   },
-] as const;
+  {
+    match: { sectionCode: "Epikrise" },
+    kind: "diagnosis_section",
+    billingRelevance: "high",
+    extract: ["diagnosisText", "procedureText", "medicationText"],
+  },
+  {
+    match: { sectionCode: "AllgemeinerEintrag" },
+    kind: "progress_note",
+    billingRelevance: "low",
+    extract: [],
+  },
+];

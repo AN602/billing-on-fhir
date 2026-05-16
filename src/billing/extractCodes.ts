@@ -11,3 +11,77 @@
 // - ICD-10-GM: codes such as C83.3, U07.1, etc.
 //
 // Add test cases for false positives, especially dates and numeric lab values.
+
+import { findIcdCodes, findOpsCodes } from "../config/codeRegexes.js";
+import type { CandidateCode, ClinicalEvidenceItem } from "./dossierTypes.js";
+
+function dedupeByKey(candidates: CandidateCode[]): CandidateCode[] {
+  const map = new Map<string, CandidateCode>();
+  for (const candidate of candidates) {
+    const key = `${candidate.system}|${candidate.code ?? ""}|${candidate.status}|${candidate.method}`;
+    const existing = map.get(key);
+    if (!existing) {
+      map.set(key, candidate);
+      continue;
+    }
+    existing.evidenceItemIds = [...new Set([...existing.evidenceItemIds, ...candidate.evidenceItemIds])];
+  }
+  return [...map.values()];
+}
+
+export function extractCodesForEvidence(evidence: ClinicalEvidenceItem): CandidateCode[] {
+  const ops = findOpsCodes(evidence.text).map((code) => ({
+    system: "OPS" as const,
+    code,
+    status: "explicit" as const,
+    method: "regex" as const,
+    confidence: 0.95,
+    evidenceItemIds: [evidence.id],
+    sourceText: evidence.textSnippet,
+  }));
+
+  const icd = findIcdCodes(evidence.text).map((code) => ({
+    system: "ICD-10-GM" as const,
+    code,
+    status: "explicit" as const,
+    method: "regex" as const,
+    confidence: 0.95,
+    evidenceItemIds: [evidence.id],
+    sourceText: evidence.textSnippet,
+  }));
+
+  return dedupeByKey([...ops, ...icd]);
+}
+
+export function extractCodes(evidenceItems: ClinicalEvidenceItem[]): {
+  evidenceItems: ClinicalEvidenceItem[];
+  explicit: CandidateCode[];
+  needsReview: CandidateCode[];
+} {
+  const explicit: CandidateCode[] = [];
+  const needsReview: CandidateCode[] = [];
+
+  const updatedEvidence = evidenceItems.map((item) => {
+    const extracted = extractCodesForEvidence(item);
+    explicit.push(...extracted);
+
+    if (!extracted.length && item.billingRelevance !== "low" && item.billingRelevance !== "ignore") {
+      needsReview.push({
+        system: "ICD-10-GM",
+        status: "needs_review",
+        method: "manual",
+        confidence: 0,
+        evidenceItemIds: [item.id],
+        sourceText: item.textSnippet,
+      });
+    }
+
+    return { ...item, extractedCodes: extracted };
+  });
+
+  return {
+    evidenceItems: updatedEvidence,
+    explicit: dedupeByKey(explicit),
+    needsReview: dedupeByKey(needsReview),
+  };
+}

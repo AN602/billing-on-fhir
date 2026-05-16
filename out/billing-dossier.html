@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><title>Billing Case Dossier</title></head>
+<body>
+<h1>Billing Case Dossier</h1>
+<p>This prototype extracts billing-relevant evidence and candidate ICD/OPS codes from FHIR/TIPLU data. It does not produce legally final hospital billing codes.</p>
+
+<section id="case-summary">
+<h2>Case Summary</h2>
+<p>Patient: Max Muster</p>
+<p>Encounter period: 2024-10-12 - 2024-10-20</p>
+<p>Account: P92ab1c5c511d6912bf</p>
+</section>
+
+<section id="candidate-codes"><h2>Candidate Codes</h2>
+<ul><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=1-930.1" target="_blank" rel="noopener noreferrer">1-930.1</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=9-984.7" target="_blank" rel="noopener noreferrer">9-984.7</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=1-930.0" target="_blank" rel="noopener noreferrer">1-930.0</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=8-98g.13" target="_blank" rel="noopener noreferrer">8-98g.13</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=6-00k.0" target="_blank" rel="noopener noreferrer">6-00k.0</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=8-831.00" target="_blank" rel="noopener noreferrer">8-831.00</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=3-990" target="_blank" rel="noopener noreferrer">3-990</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=3-800" target="_blank" rel="noopener noreferrer">3-800</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=3-820" target="_blank" rel="noopener noreferrer">3-820</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=3-994" target="_blank" rel="noopener noreferrer">3-994</a></li><li>OPS <a href="https://www.icd-code.de/suche/ops/recherche.html?sp=9-401.00" target="_blank" rel="noopener noreferrer">9-401.00</a></li></ul>
+</section>
+
+<section id="high-relevance-evidence"><h2>High-Relevance Evidence</h2><ul><li><strong>Einleitung</strong> (discharge_summary)<br/>Sehr geehrte Kollegen und Kolleginnen, wir berichten über Herr Max Muster, geboren am 06.05.1968, der sich bei uns in stationärer Behandlung vom 12.10.2024 bis 20.10.2024 befand.<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Hauptdiagnose</strong> (diagnosis_section)<br/>Primäres ZNS-Lymphom, ED 08.2024
+
+Initiale Symptomatik:
+Vertikale Diplopie, Synkope, Halluzinationen, Hemiparese links, zentrale Fazialisparese rechts, Gangataxie
+
+Initiale Ausdehnung:
+Stammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, temporopolar rechts
+
+Sta<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Weitere Prozeduren</strong> (diagnosis_section)<br/>03.08.2024
+- Erstvorstellung XXX mit Diplopie und Synkope
+- cCT: V. a. intrakranielle Raumforderung rechts mit umgebendem Ödem
+
+04.08.2024
+- cMRT:
+ - Schrankengestörte Raumforderung rechts
+ - Affektion von Stammganglienregion, Thalamus, Hypothalamus und Hirnstamm
+ - Kleinnoduläre<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Weitere Prozeduren</strong> (procedure_section)<br/>12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)
+12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)
+12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression (<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Anamnese</strong> (discharge_summary)<br/>Wir nehmen XXX_NAME außerplanmäßig stationär auf bei eingeschränkter eigenständiger Versorgungsfähigkeit und Covid-Erkrankung der Familienangehörigen. Zur Aufnahme verneint XXX_NAME akute neue Beschwerden. Essen und Trinken sei normal möglich, Trinkmenge ca. 2,5 Liter, Stuhlgang <br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Epikrise</strong> (diagnosis_section)<br/>Bei Aufnahme bestand ein primäres ZNS-Lymphom (diffuses großzelliges B-Zell-Lymphom) mit einer ausgeprägten neurologischen Symptomatik, die sich in einer okulomotorischen Störung mit vertikaler Diplopie, Synkopen, Halluzinationen, einer linksseitigen Hemiparese, einer zentralen F<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Diagnosen</strong> (diagnosis_section)<br/>Primäres ZNS-Lymphom,
+ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, rec<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Nebendiagnosen</strong> (diagnosis_section)<br/>Arterielle Hypertonie
+Rippenserienfraktur links ohne grobe Dislokation, konservative Therapie (08/2024)
+Bandscheibenvorfall L5/S1, operative Versorgung
+Coxarthrose bds.
+Bds. rezidivierende Glaskörpereinblutungen, Pseudophakie
+RA Netzhautforamina
+RA ppV23G mit Kryoretinopexie und <br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Aufnahmegrund</strong> (discharge_summary)<br/>Hämatoonkologischer Verlauf
+:
+03.08.24	Erstvorstellung XXX mit Diplopie und Synkope
+ cCT:
+ V. a. intrakranielle Raumforderung rechts mit umgebendem Ödem
+04.08.24	cMRT:
+Schrankengestörte Raumforderung rechts, Affektion von Stammganglienregion, Thalamus, Hypothalamus und Hirnstamm;<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Anamnese</strong> (discharge_summary)<br/>Wir nehmen XXX_NAME außerplanmäßig stationär auf bei eingeschränkter eigenständiger Versorgungsfähigkeit und Covid-Erkrankung der Familienangehörigen. Zur Aufnahme verneint XXX_NAME akute neue Beschwerden. Essen und Trinken sei normal möglich, Trinkmenge ca. 2,5 Liter, Stuhlgang <br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>SozialeAnamnese</strong> (discharge_summary)<br/>Ehefrau letztes Jahr überraschend und dramatisch an gastrointestinaler Blutung verstorben. Bislang alleine zuhause lebend, selbstversorgend, kein Unterstützungsbedarf. Kinder leben im gleichen Haus in eigenen XXX.<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Familienanamnese</strong> (discharge_summary)<br/>Neoplastische Erkrankungen: Bruder mit Oropharynxkarzinom mit Lymphknotenmetastasen, Schwester anamnestisch unklare Krebserkrankung.<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Berufsanamnese</strong> (discharge_summary)<br/>XXX, häufiger Kontakt zu Lacken und Lackdämpfen sowie Metallstäuben.<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Aufnahmebefund</strong> (discharge_summary)<br/>65-jähriger Patient, ECOG 3, normosomer Ernährungszustand.
+Größe: 179 cm, Gewicht: 81,7 kg, BMI: 25,5 kg/m²
+
+Haut: warm, trocken, intakt, keine Blutungszeichen
+Lymphknotenstatus: keine palpabel vergrößerten LK axillär und inguinal
+Mund: Schleimhaut intakt, feucht, rosig
+Pulmo: VA<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>VerlaufEpikrise</strong> (discharge_summary)<br/>Die stationäre Aufnahme von XXX_NAME erfolgte außerplanmäßig zur kurzfristigen Sicherstellung einer Versorgung bei Covid-Infketion der mitversorgenden Angehörigen. Bei Aufnahme zeigte XXX_NAME keine wesentlichen respiratorsichen Symptome und geringfügige Infektzeichen ohne Fieber<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Medikation</strong> (discharge_summary)<br/>s. Extramedikamentenverordnung<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li></ul></section>
+<section id="medium-relevance-evidence"><h2>Medium-Relevance Evidence</h2><ul><li><strong>Bildgebungsbefunde</strong> (radiology_report)<br/>RIS Radiologieanforderung (XXX) Donnerstag, 17. Oktober 2024:
+
+Befund: Zum Vergleich liegt ein Röntgen Thorax vom 8.09.2024 vor. Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Hieru<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Aufnahmemedikation</strong> (medication_section)<br/>Pantoprazol 40 mg 0-0-1
+Vitamin XXX I.E. 1x/Woche (freitags)
+Cotrimoxazol 800/160 mg 1-0-0 XXX, Mi, Fr
+Aciclovir 400 mg 1-0-1
+
+Augentropfen:
+Cosopt (rechtes Auge) 1-0-1
+Clonid-Opthal 1,25 mg/ml (rechtes Auge) 1-0-1
+Tim-Ophtal 0,5% sine 5 mg/ml (linkes Auge) 1-0-1
+Monoprost EDP 0,<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>Therapieempfehlung</strong> (planned_treatment)<br/>Fortführung Chemotherpie mit Therapieelement MATRIX
+Im Anschluss Planung autologe Stammzelltransplantation im MSH<br/><small>Composition/b0a08c6f-dc53-4ee4-a83a-c242714c8144</small></li><li><strong>DurchgefuehrteMassnahmen</strong> (procedure_section)<br/>Konsil - Allgemeine Chirurgie<br/><small>Composition/P07d7b164783836ba1b</small></li><li><strong>Beurteilung</strong> (consult_note)<br/>4.12.24 (XXX) kein Port-Tag. Termin eingetragen für 6.12.24. Pat. möchte bitte am Vortag um 15 Uhr unter XXX_TELEFON zwecks Mitteilung der Uhrzeit.<br/><small>Composition/P07d7b164783836ba1b</small></li><li><strong>FragestellungIndikation</strong> (consult_note)<br/>Psychoonkologische Mitbetreuung – Verlauf<br/><small>Composition/P125b783bd96b04e134</small></li><li><strong>Untersuchungsbefund</strong> (consult_note)<br/>Grundstimmung:
+ ausgeglichen
+Eigengefährdung:
+ keine akute Suizidalität
+Supportives Gespräch, Pat. bereits bekannt. Der Patient warte derzeit auf ein MRT und hoffe sehr auf eine positive Nachricht. Gespräch über Strategien während des Wartens und Aushaltens. Ressourcen aktiviert,<br/><small>Composition/P125b783bd96b04e134</small></li><li><strong>DurchgefuehrteMassnahmen</strong> (procedure_section)<br/>Konsil - Psychoonkologie<br/><small>Composition/P125b783bd96b04e134</small></li><li><strong>Befund</strong> (radiology_report)<br/>Zum Vergleich liegt ein Röntgen Thorax vom 8.09.2024 vor.
+Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Hierunter keine pleurale Dehiszenz. Trachea und Hauptbronchien frei belüftet<br/><small>Composition/P1d43a21849805f023e</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>Staging vor Therapiefortführung<br/><small>Composition/P23a50ff2d0a01a9762</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>ZNS Lymphom, kommt vrsl gegen 13.10. zum 3. Zyklus XXX<br/><small>Composition/P23a50ff2d0a01a9762</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>jetzt Staging vor Therapiefortführung mit MATRIX, aktuell Iso bei Covid-pos
+
+Neuanforderung, XXX Transport durch Transportdienst abgelehnt (fehlende Info über Covid-Iso).<br/><small>Composition/P241aacf1b61cdecfab</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>primäres ZNS-Lymphom, 
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, rechts tempor<br/><small>Composition/P241aacf1b61cdecfab</small></li><li><strong>Beurteilung</strong> (radiology_report)<br/>Im kurzfristigen zeitlichen Verlauf diskret regredientes Lymphom in den Stammganglien und dem Mesenzephalon rechts mit geringem perifokalen Ödem.
+Bekannter Biopsiedefekt rechts frontobasal.
+Bekannter kleiner Parenchymdefekt im Thalamus rechts.<br/><small>Composition/P241aacf1b61cdecfab</small></li><li><strong>FragestellungIndikation</strong> (consult_note)<br/>erbitten Portimplantation am 04.12.2024<br/><small>Composition/P3fffec9b68a7b64256</small></li><li><strong>Vordiagnosen</strong> (consult_note)<br/>Primäres-ZNS-Lymphom, Initialsymptomatik mit Hemiparese li, Okkulumotorikstörung, Fazialisparese re. aktuell unter Therapie, Z.n. R-MTS und XXX, Therapieeskalation mit MATRIX geplant
+
+für weitere Therapie bitte Portimplantation
+(Anmerk.: ursprünglich Implantation mal für Anfnag D<br/><small>Composition/P3fffec9b68a7b64256</small></li><li><strong>FragestellungIndikation</strong> (lab_report_reference)<br/>Fragestellung:
+MRGN,VRE<br/><small>Composition/P401314481fd755e702</small></li><li><strong>Untersuchungsmaterial</strong> (lab_report_reference)<br/>Mikrobiologiebefund: Screening Abstrich, tief rektal, 11.10.2024 09:37:16<br/><small>Composition/P401314481fd755e702</small></li><li><strong>BefundKeime</strong> (lab_report_reference)<br/>Kulturelle Ergebnisse:
+Kommentare:
+In der kulturellen Screeninguntersuchung kein Hinweis auf ein
+multiresistentes gramnegatives Bakterium der Gruppen 3MRGN oder 4MRGN
+(Enterobakterien, Acinetobacter baumanii, Pseudomonas aeruginosa).
+In der kulturellen Screeninguntersuchung kein <br/><small>Composition/P401314481fd755e702</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>jetzt Staging vor Therapiefortführung mit MATRIX, aktuell Iso bei Covid-pos
+
+Neuanforderung, XXX Transport durch Transportdienst abgelehnt (fehlende Info über Covid-Iso).<br/><small>Composition/P4da2544e4320ac1cce</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>primäres ZNS-Lymphom, 
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, rechts tempor<br/><small>Composition/P4da2544e4320ac1cce</small></li><li><strong>DurchgefuehrteTherapie</strong> (planned_treatment)<br/>Physiotherapie Einzel, Physiotherapie Gruppe<br/><small>Composition/P6200e8d6ebf3e93052</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>Lage ZVK? Pneumothorax?<br/><small>Composition/P64810125f71d9e4d03</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>neue ZVK-Anlage linksseitig vor Chemotherapie<br/><small>Composition/P64810125f71d9e4d03</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>Staging vor Therapiefortführung<br/><small>Composition/P902864c8929757140b</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>ZNS Lymphom, kommt vrsl gegen 13.10. zum 3. Zyklus XXX<br/><small>Composition/P902864c8929757140b</small></li><li><strong>Beurteilung</strong> (radiology_report)<br/>Bekannter Biopsiedefekt rechts frontobasal. Deutlich regredientes Lymphom mit deutlich regredienten, noch residuell abgrenzbaren Ödemen lentikulostriär und im Mesenzephalon. Aktuell keine Liquorzirkulationsstörung.<br/><small>Composition/P902864c8929757140b</small></li><li><strong>Befund</strong> (radiology_report)<br/>CT-Schädel vom 26.09.2024 zum Vergleich vorliegend. MRT Hirn vom 25.08.2024 zum Vergleich vorliegend.
+Neu zur MRT 08/2024 und bekannt aus der CT vom 26.09.2024 Z. n. Biopsieentnahme rechts über eine supraorbitale Trepanation. Biopsiedefekt rechts frontobasal mit entsprechendem T2<br/><small>Composition/Pb0d7f74ead284d7bb0</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>Lage ZVK? Pneumothorax?<br/><small>Composition/Pb72533274aa0c3c2b9</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>neue ZVK-Anlage linksseitig vor Chemotherapie<br/><small>Composition/Pb72533274aa0c3c2b9</small></li><li><strong>Aufnahmemedikation</strong> (medication_section)<br/>Pantoprazol 40 mg 0-0-1
+Vitamin XXX I.E. 1x/Woche (freitags)
+Cotrimoxazol 800/160 mg 1-0-0 XXX, Mi, Fr
+Aciclovir 400 mg 1-0-1
+
+Augentropfen:
+
+Cosopt (rechtes Auge) 1°-0-1°
+Clonid-Opthal 1/8%sine 1,25 mg/ml (rechtes Auge) 1°-0-1°
+Tim-Ophtal 0,5% sine 5 mg/ml (linkes Auge) 1°-0-1°
+<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>Therapieempfehlung</strong> (planned_treatment)<br/>- Fortführung Chemotherpie mit Therapieelement MATRIX 
+- Im Anschluss Planung autologe Stammzelltransplantation im MSH<br/><small>Composition/Pbc91154f2d8ccfcc37</small></li><li><strong>FragestellungIndikation</strong> (consult_note)<br/>PO Pat. bekannt<br/><small>Composition/Pbda10c786f33495f97</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>Lage ZVK? Pneumothorax?<br/><small>Composition/Pc178438caf3c3790b8</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>neue ZVK-Anlage linksseitig vor Chemotherapie<br/><small>Composition/Pc178438caf3c3790b8</small></li><li><strong>Beurteilung</strong> (radiology_report)<br/>Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Kein Pneumothorax abgrenzbar.
+Keine Pneumonie. Keine pulmonalvenöse Stauung oder relevante Ergussmengen.<br/><small>Composition/Pc178438caf3c3790b8</small></li><li><strong>VorgeseheneOperation</strong> (planned_treatment)<br/>Hals: Gefäße: Portkatheterimplantation,-entfernung (XXX) , Portimplantation rechts in LA<br/><small>Composition/Pc831d219c75d731335</small></li><li><strong>FragestellungIndikation</strong> (radiology_report)<br/>jetzt Staging vor Therapiefortführung mit MATRIX, aktuell Iso bei Covid-pos
+
+Neuanforderung, XXX Transport durch Transportdienst abgelehnt (fehlende Info über Covid-Iso).<br/><small>Composition/Pcbdc75a3171b466650</small></li><li><strong>KlinischenAngaben</strong> (radiology_report)<br/>primäres ZNS-Lymphom, 
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, rechts tempor<br/><small>Composition/Pcbdc75a3171b466650</small></li><li><strong>FragestellungIndikation</strong> (lab_report_reference)<br/>Fragestellung:
+MRGN,MRSA (Kultur)<br/><small>Composition/Pd61fb6523f343a2d38</small></li><li><strong>Untersuchungsmaterial</strong> (lab_report_reference)<br/>Mikrobiologiebefund: Screening Abstrich, Rachen/Nase, 11.10.2024 09:37:16<br/><small>Composition/Pd61fb6523f343a2d38</small></li><li><strong>BefundKeime</strong> (lab_report_reference)<br/>Kulturelle Ergebnisse:
+Kommentare:
+In der kulturellen Screeninguntersuchung kein Hinweis auf ein
+multiresistentes gramnegatives Bakterium der Gruppen 3MRGN oder 4MRGN
+(Enterobakterien, Acinetobacter baumanii, Pseudomonas aeruginosa).
+In der kulturellen Screeninguntersuchung kein <br/><small>Composition/Pd61fb6523f343a2d38</small></li><li><strong>FragestellungIndikation</strong> (consult_note)<br/>Psychoonkologische Mitbetreuung – Verlauf<br/><small>Composition/Pe0de0b96fca67129db</small></li><li><strong>Untersuchungsbefund</strong> (consult_note)<br/>Grundstimmung:
+ ausgeglichen
+Weitere Störungen:
+ erschöpft
+Eigengefährdung:
+ keine akute Suizidalität
+supportives Gespräch, Evaluation der psychischen Verfassung des Patienten. Der Patient berichtet aus dem derzeitigen Behandlungsgeschehen und vom Übergang zurück auf die Station.<br/><small>Composition/Pe0de0b96fca67129db</small></li><li><strong>DurchgefuehrteMassnahmen</strong> (procedure_section)<br/>Konsil - Psychoonkologie<br/><small>Composition/Pe0de0b96fca67129db</small></li><li><strong>Befund</strong> (radiology_report)<br/>Zur MRT-Voruntersuchung vom 16.10.2024 minimal regredientes Enhancement im Mesenzephalon und lentikulostriär rechts. Bekannte kortikomedulläre Defekte rechts frontobasal mit angrenzenden regredientem linearen Enhancement. Kein Nachweis einer intrakraniellen Schrankenstörung. Kons<br/><small>Composition/Pe927044d6826a77e43</small></li><li><strong>FragestellungIndikation</strong> (lab_report_reference)<br/>Fragestellung:
+MRGN,MRSA (Kultur)<br/><small>Composition/Pfacfac944a90dfce52</small></li><li><strong>Untersuchungsmaterial</strong> (lab_report_reference)<br/>Mikrobiologiebefund: Screening Abstrich, Leiste, 11.10.2024 09:37:16<br/><small>Composition/Pfacfac944a90dfce52</small></li><li><strong>BefundKeime</strong> (lab_report_reference)<br/>Kulturelle Ergebnisse:
+Kommentare:
+In der kulturellen Screeninguntersuchung kein Hinweis auf ein
+multiresistentes gramnegatives Bakterium der Gruppen 3MRGN oder 4MRGN
+(Enterobakterien, Acinetobacter baumanii, Pseudomonas aeruginosa).
+In der kulturellen Screeninguntersuchung kein <br/><small>Composition/Pfacfac944a90dfce52</small></li></ul></section>
+<section id="low-relevance-evidence"><h2>Low-Relevance / Ignored Evidence</h2><ul><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 17.10.24 08:23:
+Beurteilung: Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Kein Pneumothorax abgrenzbar.
+Keine Pneumonie. Keine pulmonalvenöse S<br/><small>Composition/0990cad2-e112-4279-a7c6-2f8ba38c17bf</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 27.10.24 05:23:
+Befund: Zur MRT-Voruntersuchung vom 16.10.2024 minimal regredientes Enhancement im Mesenzephalon und lentikulostriär rechts. Bekannte kortikomedulläre Defekte rechts frontobasal mit angrenzenden regredientem linearen Enhancement<br/><small>Composition/0b5ab029-2467-4059-bcf7-ebed11134cc9</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 17.10.24 05:33:
+Befund: Zum Vergleich liegt ein Röntgen Thorax vom 8.09.2024 vor.
+Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Hierunter keine <br/><small>Composition/61bade55-ac78-405b-82bc-2c645000a9f3</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 17.10.24 06:02:
+Befund: CT-Schädel vom 26.09.2024 zum Vergleich vorliegend. MRT Hirn vom 25.08.2024 zum Vergleich vorliegend.
+Neu zur MRT 08/2024 und bekannt aus der CT vom 26.09.2024 Z. n. Biopsieentnahme rechts über eine supraorbitale Trepana<br/><small>Composition/6a337476-dfef-4045-a714-6dee99a8eb8a</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 27.10.24 06:31:
+Beurteilung: Im kurzfristigen zeitlichen Verlauf diskret regredientes Lymphom in den Stammganglien und dem Mesenzephalon rechts mit geringem perifokalen Ödem.
+Bekannter Biopsiedefekt rechts frontobasal.
+Bekannter kleiner Parench<br/><small>Composition/bc97a79d-4313-46dd-b2df-414b70c9352c</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>RIS Radiologieanforderung (XXX) vom 18.10.24 10:04:
+Beurteilung: Bekannter Biopsiedefekt rechts frontobasal. Deutlich regredientes Lymphom mit deutlich regredienten, noch residuell abgrenzbaren Ödemen lentikulostriär und im Mesenzephalon. Aktuell keine Liquorzirkulationsstörung.<br/><small>Composition/df3abbd2-fdaa-44fc-98d8-b25ffb28aa84</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>2550 ml<br/><small>Composition/P01e16afcb59e7a3230</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/P01e16afcb59e7a3230</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 2550 ml<br/><small>Composition/P01e16afcb59e7a3230</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX wirkt schlafend.<br/><small>Composition/P0984208a7b3b136f52</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Pat. gibt auf Nachfrage keine Beschwerden an. Schien zu schlafen.<br/><small>Composition/P0de39f9a518396ac02</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>S: AZ stabil, gibt keine akuten Beschwerden an, nach den 2. XXX_NAME sei seine Sprache wieder besser geworden, weiterhin bestehend und für 1 Amp. Infanrix Hexa XXXm im Vordergrund stehend, seien v.a. die Gangstörungen (schwankend), ebenso die Kurzzeitgedäcghnsischwieirgkeiten. Er<br/><small>Composition/P132cb4ba2084bea603</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX hat kein Beschwerden geäußert, trotz leichter Husten. Nach CT-Werte, darf XXX entisoliert werden. XXX ist mit der Physio ins Flur spazieren.<br/><small>Composition/P2376e8e6c3002480cf</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/P29bf74315969ef0c5b</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX gibt auf Nachfrage keine akuten Beschwerden an, Augentropfen nach Plan verabreicht. Nutzt die Urinflasche.<br/><small>Composition/P2f457bc28b168e3491</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/P37db7393afbefff92b</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Spätdienst
+Pat. gegen 19Uhr geduscht, wollte sein Intimbereich reinigen und die Nässeschutzhose wechseln, Pat. im stand zwischendurch stark wankend, 
+Pat. gibt Juckreiz am Oberkörper an 2x ordentlich gecremt.<br/><small>Composition/P4bdc7d5ddabb461bb8</small></li><li><strong>Anordnung</strong> (unknown)<br/>ZVK kann befahren werden<br/><small>Composition/P4d6e4aa6a97ef1b3ea</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>PVK (Neuanlage), Lok.: Ellenbeuge rechts
+gelegt am: 16.10.2024 XXX: 12:29, entfernt am: 16.10.2024 XXX: 19:45<br/><small>Composition/P4ee43e5ba601b5bc5a</small></li><li><strong>Anordnung</strong> (unknown)<br/>19.10. bitte KOntrolle Covid-Abstrich<br/><small>Composition/P5140fa9d16b94df625</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX wirkt schlafend. Rücken eingecremt, XXX Haut juckt.<br/><small>Composition/P542d0aef81bd30d9fa</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt keine akuten Beschwerden an, Hüsteln würde er immer etwas, kein Fieber, keine neue/progrediente Neurologie, Essen/Trinken gut, Stuhlgang opB
+
+O: MSH feucht, intakt, Pulmo: VAG XXX, seitengleiche Belüftung, allgemeine Sarkopenie, Krafteinschränkung rechte<br/><small>Composition/P5571e0bf2c963720f1</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Frühdienst
+Pat. am morgen im Urin schwimmend vorgefunden, Pat. äussert die Urin Kontrolle nicht zu haben -&gt; merkt zwar auf Toilette zu müssen schafft es dann aber nicht rechtzeitig bzw. die Koordination mit der Urinflasche. Pat. mehrmals gefragt bis zum XXX_NAME Schutzhose trocke<br/><small>Composition/P56391baf617eb4e26a</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/P57ac96d61a149a476b</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt an, dass in den letzten Tagen XXX Sehen eher wieder schlechter geworden sei (Verschwommen), und sein Hüsteln nun Husten sei, bisher nicht produktiv, weiterhin Juckreiz am Oberkörper a.e. bei trockener Haut, kein Fieber, Essen/Trinken gut, Stuhlgang opB. <br/><small>Composition/P67d25f7aab1db0ddd1</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX wirkt schlafend.<br/><small>Composition/P68be4befbc1f032ef9</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Frühdienst
+Pat. war heute eigenständig im Badezimmer brauchte keine Unterstützung, husten wird laut Pat. etwas mehr -&gt; inhaliert jetzt mit NaCl,<br/><small>Composition/P714cbcce63007cd3cb</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX gibt Juckreiz am Rücken an. Wird eingecremt mit Lotion. MRT heute morgen nicht gelaufen, XXX es Probleme mit dem Transport gab.<br/><small>Composition/P71782a5eb7edd19725</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Pat. bei Antritt bereits sehr schläfrig. Gibt keine Besonderheiten an.<br/><small>Composition/P7ec1032ab60dfa949c</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>3200 ml<br/><small>Composition/P835ff98f0d864c1e0d</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/P835ff98f0d864c1e0d</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 3200 ml<br/><small>Composition/P835ff98f0d864c1e0d</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>kein weiterer Bedarf
+
+20.10. XXX auf die HSS verlegt. LG
+18.10. Besuch bei Pat.: XXX ist zuhause mit PD, Hilfsmittel gut versorgt. Seine Tochter habe Fragen zur Freistellung pflegender Angehöriger. Anruf bei Tochter: keinen erreicht. RR: Fragen geklärt. LG
+16.10. Pat. nicht anget<br/><small>Composition/P87a0caa68179688033</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>3200 ml<br/><small>Composition/P93fafd11a15002bc5f</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>960 ml<br/><small>Composition/P93fafd11a15002bc5f</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 2240 ml<br/><small>Composition/P93fafd11a15002bc5f</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/P97402054aa0ee48a3c</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX fühlt sich gut während der XXX_NAME, hat keine akuten Beschwerden oder Schmerzen geäußert. Nach Rücksprache mit der XXX, heute und morgen ist keine Blutabnahme notwendig. Aufgrund einer Entzündung am linken Arm, wurde der PVK entfernt. Medikamente nach Plan erhalten.<br/><small>Composition/P978ab66dd6d5fde12c</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/Pa2af665ad50ce349d7</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt an, gibt keine neuen Beschwerden an, keine Schmerzen. Nahrungsaufnhame normal, Stuhlgang und Miktion probemloslos. Sehen unverändert.
+
+O: MSH feucht, intakt, Pulmo: VAG XXX, seitengleiche Belüftung, allgemeine Sarkopenie, mit Rollator im Zimmer mobil, be<br/><small>Composition/Pa607347f39af437f50</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Augentropfen nach Plan erhalten. VZ stabil. Keine Beschwerden geäußert. XXX hat sich nicht gemeldet.<br/><small>Composition/Pa795167b5b3605d843</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>3200 ml<br/><small>Composition/Paa5e443bd0d576bf52</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/Paa5e443bd0d576bf52</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 3200 ml<br/><small>Composition/Paa5e443bd0d576bf52</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/Pafcc436c4b3216632d</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt keine neuen Beschwerden an, keine Schmerzen. Nahrungsaufnhame normal, Stuhlgang und Miktion problemlos. Treppensteigen mit der Physio erfreulich.
+
+O: MSH feucht, intakt, Pulmo: VAG XXX, seitengleiche Belüftung, allgemeine Sarkopenie, mit Rollator im Zimm<br/><small>Composition/Pb037ce41258fdcdad5</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX war am XXX auf dem Flur spazieren, danach lag er die meiste Zeit im XXX_NAME, schläft viel. XXX äußerte keine Beschwerden Med nach Plan.<br/><small>Composition/Pb2ccb7f4c5fc7415fe</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>VZ unauffällig. Pat. hat inhaliert, wegen husten. Meds nach Plan bekommen. Sonst keine Besonderheiten.<br/><small>Composition/Pb80026943a4eb10bed</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>03.11 Anruf PD: Austausch, 1-2x/ Woche Duschen können sie zusätzlich übernehmen. Sie nehmen Kontakt zur Tochter auf, XXX die Details zu besprechen.
+
+25.10 Pat. aufgesucht:
+ Er lebe alleine. Seine Kinder unterstützen im Alltag. Ob ein Pflegegrad besteht wisse er nicht. Pflegediens<br/><small>Composition/Pbbd6136576dfac0be1</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt keine akuten Beschwerden an, Juckreiz am Oberkörper a.e. bei trockener Haut, weiterhin Hüsteln, kein Fieber, keine neue/progrediente Neurologie, Essen/Trinken gut, Stuhlgang opB
+
+O: MSH feucht, intakt, Pulmo: VAG XXX, seitengleiche Belüftung, allgemeine <br/><small>Composition/Pbc2fbaad4df18a40ca</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX gibt auf Nachfrage keine akuten Beschwerden an, Augentropfen nach Plan verabreicht. Kein Juckreiz mehr angegeben.<br/><small>Composition/Pc31b62a10021f04cdf</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>MTX XXX_NAME
+1. MTX XXX_NAME gesichtet: 119 -&gt; kein Handlungsbedarf.<br/><small>Composition/Pca3bcd4591818bbde7</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Visite
+S: AZ stabil, gibt an, gibt keine neuen Beschwerden an, keine Schmerzen. Nahrungsaufnhame normal, Stuhlgang und Miktion problemlos.
+
+O: MSH feucht, intakt, Pulmo: VAG XXX, seitengleiche Belüftung, allgemeine Sarkopenie, mit Rollator im Zimmer mobil, nuerologisch idem. ZVK <br/><small>Composition/Pcc0a831e49bf36a599</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>2100 ml<br/><small>Composition/Pcc992404385869a62b</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/Pcc992404385869a62b</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 2100 ml<br/><small>Composition/Pcc992404385869a62b</small></li><li><strong>Befund</strong> (unknown)<br/>ROE Thorax, 1 Eb.
+ am 16.10.2024 XXX 18:04
+
+Zum Vergleich liegt ein Röntgen Thorax vom 8.09.2024 vor.
+Zwischenzeitlich Zug des rechts-jugulären ZVK sowie Neuanlage eines links-jugulären ZVK mit Lageprojektion der Spitze auf die Vena cava superior. Hierunter keine pleurale Dehisze<br/><small>Composition/Pd6ac77757d07ed9532</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/Pdad7c9f674fb368eb4</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>300 ml<br/><small>Composition/Pdb57fd7b48bddfaf2d</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/Pdb57fd7b48bddfaf2d</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 300 ml<br/><small>Composition/Pdb57fd7b48bddfaf2d</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Übergabe
+Diagnose: Primäres ZNS-Lymphom, ED 08/2024
+Initiale Symptomatik
+: Okkulomotorikstörung mit vertikaler Diplopie, Synkope, Halluzinationen, Hemiparese li., zentrale Facialisparese re., Gangataxie
+Initiale Ausdehnung
+: Stammganglien rechts, Thalamus rechts, Hypothalamus rec<br/><small>Composition/Pe08db8543f0b71919f</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>4650 ml<br/><small>Composition/Pe1c482c68822f6755e</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/Pe1c482c68822f6755e</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 4650 ml<br/><small>Composition/Pe1c482c68822f6755e</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX hat keine akuten Beschwerden geäußert. VZ stabil. Med nach Plan erhalten. XXX wird heute nach HSS verlegt.<br/><small>Composition/Pe725f2e3e62abefd3f</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Spätdienst
+Pat. geht vermehrt mit dem Rollator über den Flur, äussert im XXX_NAME keine Probleme.<br/><small>Composition/Pe96f5e3cb76a5c9b00</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX erhält am XXX einen ZVK, am XXX_NAME wird er zum MRT und Röntgen abgeholt. XXX liegt viel im XXX_NAME, äußerte keine Beschwerden.<br/><small>Composition/Pea7ad8df964c6073e0</small></li><li><strong>Einfuhr</strong> (administrative_or_low_relevance)<br/>3000 ml<br/><small>Composition/Peda9f59030ef002b24</small></li><li><strong>Ausfuhr</strong> (administrative_or_low_relevance)<br/>0 ml<br/><small>Composition/Peda9f59030ef002b24</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Bilanz: 3000 ml<br/><small>Composition/Peda9f59030ef002b24</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>XXX hat keine Beschwerden geäußert. VZ stabil. Abstrich ist gelaufen. XXX lehnt Hilfe bei Grundpflege ab.<br/><small>Composition/Pf05fce25ca2c172910</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>ZVK (Neuanlage), vierlumig
+gelegt am: 16.10.2024 XXX: 15:35, entfernt am: 06.11.2024 XXX: 12:21<br/><small>Composition/Pf283794180dc38d9db</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Ambulante Erstvorstellung vor autologer Stammzelltransplantation bei primärem ZNS-Lymphom
+Heute Entlassung aus langem stationären Aufenthalt (Covid plus Matrix nach Vortherapie mit 1. Zyklus R-MTX, 2. Zyklus XXX), geplante SZ-Apherese auf nach 4.Kurs verschoben (04.12.). Gutes An<br/><small>Composition/Pf9fd681e520451ea00</small></li><li><strong>AllgemeinerEintrag</strong> (progress_note)<br/>Keine Beschwerden geäußert. VZ stabil.<br/><small>Composition/Pfc9aa17404b88b65a3</small></li></ul></section>
+
+<section id="data-quality"><h2>Data Quality Warnings</h2><ul><li>ENCOUNTER_STATUS_PERIOD_INCONSISTENT: Encounter has status &#39;in-progress&#39; but also has period.end.</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P245a8a9a7d525b4412</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P9e2f89054e4a5a4812</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P6657a90a3917336fab</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/Pd417bc6464248915f4</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P15dfcf4befcc84efd7</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/Pfc773c91cb174a25b7</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P1819e36fdfcb61d02a</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P27e1288da78f396192</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P81ecaca443a8c88944</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P76f4c238868465c251</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/P73ee3dbc5d10d35735</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/Peb9fdb687daa558014</li><li>MISSING_ENCOUNTER_CONDITION: Encounter diagnosis references missing Condition: Condition/Pd4a71bb699f4d29223</li></ul></section>
+</body></html>
