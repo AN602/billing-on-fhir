@@ -70,4 +70,13 @@ describe("dossierToHtml", () => {
     expect(html).toContain('id="candidate-codes-needs-review"');
     expect(html).toContain('href="#candidate-codes-needs-review"');
   });
+
+  it("renders grouped manual review fallback legend", () => {
+    const html = dossierToHtml(buildFixtureDossier());
+
+    expect(html).toContain("Manual Review Fallback Rules");
+    expect(html).toContain("Diagnosis evidence");
+    expect(html).toContain("Other clinically relevant evidence");
+    expect(html).toContain("unknown");
+  });
 });

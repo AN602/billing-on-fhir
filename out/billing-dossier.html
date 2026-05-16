@@ -10,6 +10,11 @@
 <table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Value</th><th>Label</th><th>Description</th></tr></thead><tbody><tr><td><code>high</code></td><td>High</td><td>Directly relevant for coding or billing decisions; review with priority.</td></tr><tr><td><code>medium</code></td><td>Medium</td><td>Potentially relevant context that may support coding when combined with other evidence.</td></tr><tr><td><code>low</code></td><td>Low</td><td>Mostly background or weakly billing-relevant information.</td></tr><tr><td><code>ignore</code></td><td>Ignore</td><td>Administrative or non-clinical content that is not used for billing evidence.</td></tr></tbody></table>
 </section>
 
+<section id="manual-review-fallback-legend">
+<h2>Manual Review Fallback Rules</h2>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Group</th><th>Kinds</th><th>Review System</th><th>Meaning</th></tr></thead><tbody><tr><td>Diagnosis evidence</td><td><code>diagnosis_section</code></td><td><code>ICD-10-GM</code></td><td>Diagnosis-focused evidence falls back to ICD-10-GM manual review.</td></tr><tr><td>Procedure evidence</td><td><code>procedure_section</code></td><td><code>OPS</code></td><td>Procedure-focused evidence falls back to OPS manual review.</td></tr><tr><td>Other clinically relevant evidence</td><td><code>discharge_summary</code>, <code>radiology_report</code>, <code>medication_section</code>, <code>planned_treatment</code>, <code>consult_note</code>, <code>lab_report_reference</code>, <code>progress_note</code>, <code>unknown</code></td><td><code>unknown</code></td><td>No deterministic system can be assigned; review manually.</td></tr><tr><td>Administrative/low relevance evidence</td><td><code>administrative_or_low_relevance</code></td><td>none</td><td>No manual-review fallback candidate is created.</td></tr></tbody></table><p><small>Applied only when deterministic extraction finds no ICD/OPS code and evidence relevance is not <code>low</code> or <code>ignore</code>.</small></p>
+</section>
+
 <section id="case-summary">
 <h2>Case Summary</h2>
 <p>Patient: Max Muster</p>

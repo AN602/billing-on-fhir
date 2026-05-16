@@ -13,7 +13,8 @@
 // Add test cases for false positives, especially dates and numeric lab values.
 
 import { findIcdCodes, findOpsCodes } from "../config/codeRegexes.js";
-import type { CandidateCode, ClinicalEvidenceItem, CodingSystem, NormalizedEvidenceKind } from "./dossierTypes.js";
+import type { CandidateCode, ClinicalEvidenceItem } from "./dossierTypes.js";
+import { fallbackReviewSystemForKind } from "./reviewFallback.js";
 
 function dedupeByKey(candidates: CandidateCode[]): CandidateCode[] {
   const map = new Map<string, CandidateCode>();
@@ -60,19 +61,6 @@ export function extractCodes(evidenceItems: ClinicalEvidenceItem[]): {
 } {
   const explicit: CandidateCode[] = [];
   const needsReview: CandidateCode[] = [];
-
-  function fallbackReviewSystemForKind(kind: NormalizedEvidenceKind): CodingSystem | undefined {
-    if (kind === "administrative_or_low_relevance") {
-      return undefined;
-    }
-    if (kind === "diagnosis_section") {
-      return "ICD-10-GM";
-    }
-    if (kind === "procedure_section") {
-      return "OPS";
-    }
-    return "unknown";
-  }
 
   const updatedEvidence = evidenceItems.map((item) => {
     const extracted = extractCodesForEvidence(item);

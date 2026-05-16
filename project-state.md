@@ -63,12 +63,13 @@ Pipeline:
 
 - `src/config/codeRegexes.ts` - OPS/ICD regex patterns and helpers
 - `src/billing/extractCodes.ts` - candidate creation, dedupe, and kind-driven needs-review fallback logic (ICD/OPS/unknown)
+- `src/billing/reviewFallback.ts` - grouped fallback-rule metadata shared by extraction and HTML legend
 - `src/billing/llmCandidateExtractor.ts` - future inferred-code enrichment stub
 
 ### Change output format
 
 - `src/report/renderJson.ts` - JSON serialization/file writing, including billing relevance legend metadata
-- `src/report/renderHtml.ts` - HTML sections/content/escaping, including billing relevance legend table text
+- `src/report/renderHtml.ts` - HTML sections/content/escaping, including billing relevance and manual-review fallback legend tables
 - `src/billing/dossierTypes.ts` - output schema changes
 
 ### Change CLI behavior

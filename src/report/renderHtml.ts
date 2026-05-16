@@ -21,6 +21,7 @@ import {
   type CandidateCode,
   type ClinicalEvidenceItem,
 } from "../billing/dossierTypes.js";
+import { MANUAL_REVIEW_FALLBACK_RULES } from "../billing/reviewFallback.js";
 import { formatDate } from "../util/dateUtils.js";
 
 type CandidateLinkRef = {
@@ -73,6 +74,18 @@ function renderBillingRelevanceLegend(): string {
     .join("");
 
   return `<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Value</th><th>Label</th><th>Description</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function renderManualReviewFallbackLegend(): string {
+  const rows = Object.values(MANUAL_REVIEW_FALLBACK_RULES)
+    .map((rule) => {
+      const kindList = rule.kinds.map((kind) => `<code>${esc(kind)}</code>`).join(", ");
+      const system = rule.reviewSystem ? `<code>${esc(rule.reviewSystem)}</code>` : "none";
+      return `<tr><td>${esc(rule.label)}</td><td>${kindList}</td><td>${system}</td><td>${esc(rule.description)}</td></tr>`;
+    })
+    .join("");
+
+  return `<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Group</th><th>Kinds</th><th>Review System</th><th>Meaning</th></tr></thead><tbody>${rows}</tbody></table><p><small>Applied only when deterministic extraction finds no ICD/OPS code and evidence relevance is not <code>low</code> or <code>ignore</code>.</small></p>`;
 }
 
 function slug(value: string): string {
@@ -151,6 +164,11 @@ export function dossierToHtml(dossier: BillingDossier): string {
 <section id="billing-relevance-legend">
 <h2>Billing Relevance Levels</h2>
 ${renderBillingRelevanceLegend()}
+</section>
+
+<section id="manual-review-fallback-legend">
+<h2>Manual Review Fallback Rules</h2>
+${renderManualReviewFallbackLegend()}
 </section>
 
 <section id="case-summary">

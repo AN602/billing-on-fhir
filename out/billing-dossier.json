@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T08:30:47.889Z",
+  "generatedAt": "2026-05-16T08:36:39.374Z",
   "input": {
     "filename": "./FHIR_example.json",
     "bundleType": "searchset",
