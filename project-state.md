@@ -34,7 +34,7 @@ Pipeline:
 9. Optional LLM case summary generation (`src/summary/generateCaseSummary.ts`)
    - enabled by CLI flag `--case-summary`
    - uses `.env` config via `dotenv` in CLI startup
-   - naive prompt = concatenated normalized section title + section text
+   - structured prompt payload includes case context, grouped candidate codes, normalized evidence blocks (with evidence ids), and data-quality warnings
    - system and user prompts are loaded from markdown templates in `src/summary/` and rendered with Mustache
    - generated via `openai` SDK against llama.cpp OpenAI-compatible HTTP endpoint
    - failures are non-blocking and written to data-quality warnings
@@ -91,8 +91,8 @@ Pipeline:
 ### Change LLM case summary behavior
 
 - `src/summary/generateCaseSummary.ts` - prompt construction, OpenAI-compatible chat completion call, timeout/error handling
-- `src/summary/system-prompt.md` - editable system prompt template
-- `src/summary/user-prompt.md` - editable user prompt template with `{{documents}}` placeholder
+- `src/summary/system-prompt.md` - editable system prompt template defining German billing-focused output contract with evidence-id citation requirement
+- `src/summary/user-prompt.md` - editable user prompt template with structured placeholders for case context, code groups, evidence blocks, and data quality
 - `src/cli.ts` - `--case-summary` flag, dotenv initialization, env wiring (`LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`, `LLM_TIMEOUT_MS`)
 - `src/billing/dossierTypes.ts` - `caseSummary` result shape in dossier
 
@@ -141,4 +141,4 @@ yarn test
 - No DRG grouping
 - No final billing-code decisioning
 - LLM candidate-code inference not active (stub only)
-- LLM case summary is optional, naive concatenation-based, and non-authoritative
+- LLM case summary is optional, non-authoritative, and constrained by prompt instructions to use only provided dossier-derived context

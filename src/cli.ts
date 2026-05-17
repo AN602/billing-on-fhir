@@ -93,7 +93,10 @@ async function main(): Promise<void> {
     dataQuality,
   });
   dossier.caseSummary = await generateCaseSummary({
+    caseSummary: dossier.case,
+    candidateCodes: dossier.candidateCodes,
     evidence: dossier.evidence,
+    dataQuality: dossier.dataQuality,
     config: {
       enabled: args.caseSummary,
       baseUrl: process.env.LLM_BASE_URL,

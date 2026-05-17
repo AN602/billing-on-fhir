@@ -38,8 +38,8 @@ The CLI creates a HTML and JSON  dossier in the output folder. The HTML file is 
 
 The `--case-summary` flag enables an additional, non-blocking summary step after deterministic dossier generation.
 
-- Prompt strategy (v1): naive concatenation of all normalized section titles + text.
-- Prompt files: `src/summary/system-prompt.md` and `src/summary/user-prompt.md` (`{{documents}}` placeholder via Mustache).
+- Prompt strategy: structured Mustache-rendered prompt with case context, grouped candidate codes, evidence blocks, and data-quality warnings.
+- Prompt files: `src/summary/system-prompt.md` and `src/summary/user-prompt.md`.
 - Provider: remote/local-network llama.cpp server via OpenAI-compatible HTTP API.
 - Failure behavior: summary is marked as failed and dossier generation still succeeds.
 
