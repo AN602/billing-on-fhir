@@ -8,6 +8,7 @@
     "convert:ops-txt": "tsx ./scripts/ops-txt-to-json.ts"
   },
   "devDependencies": {
+    "@types/mustache": "^4",
     "@types/node": "^25.8.0",
     "simple-xml-to-json": "^1.2.7",
     "tsx": "^4.22.0",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "dotenv": "^17.4.2",
+    "mustache": "^4.2.0",
     "openai": "^6.38.0"
   }
 }

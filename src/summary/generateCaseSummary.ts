@@ -1,5 +1,9 @@
 import type { BillingCaseSummaryResult, ClinicalEvidenceItem } from "../billing/dossierTypes.js";
+import { readFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import OpenAI from "openai";
+import Mustache from "mustache";
 
 type SummaryConfig = {
   enabled: boolean;
@@ -8,6 +12,10 @@ type SummaryConfig = {
   model?: string;
   timeoutMs: number;
 };
+
+const summaryDir = dirname(fileURLToPath(import.meta.url));
+const systemPromptPath = resolve(summaryDir, "system-prompt.md");
+const userPromptPath = resolve(summaryDir, "user-prompt.md");
 
 function sectionLabel(item: ClinicalEvidenceItem): string {
   return item.source.sectionTitle ?? item.source.sectionCode ?? item.normalizedKind;
@@ -27,7 +35,8 @@ async function runChatCompletion(params: {
   baseUrl: string;
   apiKey?: string;
   model: string;
-  prompt: string;
+  systemPrompt: string;
+  userPrompt: string;
   timeoutMs: number;
 }): Promise<string> {
   const client = new OpenAI({
@@ -42,12 +51,11 @@ async function runChatCompletion(params: {
     messages: [
       {
         role: "system",
-        content:
-          "You summarize inpatient clinical documentation for billing specialists. Use only the provided text. Be concise and clearly state uncertainty.",
+        content: params.systemPrompt,
       },
       {
         role: "user",
-        content: `Create a concise case summary based on these normalized sections:\n\n${params.prompt}`,
+        content: params.userPrompt,
       },
     ],
   });
@@ -58,6 +66,19 @@ async function runChatCompletion(params: {
   }
 
   return content;
+}
+
+async function buildRenderedUserPrompt(documents: string): Promise<{ systemPrompt: string; userPrompt: string }> {
+  const [systemPromptTemplate, userPromptTemplate] = await Promise.all([
+    readFile(systemPromptPath, "utf-8"),
+    readFile(userPromptPath, "utf-8"),
+  ]);
+
+  const userPrompt = Mustache.render(userPromptTemplate, { documents });
+  return {
+    systemPrompt: systemPromptTemplate.trim(),
+    userPrompt: userPrompt.trim(),
+  };
 }
 
 export async function generateCaseSummary(params: {
@@ -89,11 +110,13 @@ export async function generateCaseSummary(params: {
   const model = params.config.model ?? "gpt-oss-120b";
 
   try {
+    const renderedPrompts = await buildRenderedUserPrompt(prompt);
     const text = await runChatCompletion({
       baseUrl: params.config.baseUrl,
       apiKey: params.config.apiKey,
       model,
-      prompt,
+      systemPrompt: renderedPrompts.systemPrompt,
+      userPrompt: renderedPrompts.userPrompt,
       timeoutMs: params.config.timeoutMs,
     });
 

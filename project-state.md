@@ -35,6 +35,7 @@ Pipeline:
    - enabled by CLI flag `--case-summary`
    - uses `.env` config via `dotenv` in CLI startup
    - naive prompt = concatenated normalized section title + section text
+   - system and user prompts are loaded from markdown templates in `src/summary/` and rendered with Mustache
    - generated via `openai` SDK against llama.cpp OpenAI-compatible HTTP endpoint
    - failures are non-blocking and written to data-quality warnings
 10. JSON and HTML rendering (`src/report/renderJson.ts`, `src/report/renderHtml.ts`)
@@ -90,6 +91,8 @@ Pipeline:
 ### Change LLM case summary behavior
 
 - `src/summary/generateCaseSummary.ts` - prompt construction, OpenAI-compatible chat completion call, timeout/error handling
+- `src/summary/system-prompt.md` - editable system prompt template
+- `src/summary/user-prompt.md` - editable user prompt template with `{{documents}}` placeholder
 - `src/cli.ts` - `--case-summary` flag, dotenv initialization, env wiring (`LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`, `LLM_TIMEOUT_MS`)
 - `src/billing/dossierTypes.ts` - `caseSummary` result shape in dossier
 
