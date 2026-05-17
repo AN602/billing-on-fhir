@@ -5,7 +5,7 @@
     "start": "tsx ./src/cli.ts",
     "test": "vitest",
     "convert:xml": "tsx ./scripts/xml-to-json.ts",
-    "convert:icd-txt": "tsx ./scripts/icd-to-json.ts"
+    "convert:ops-txt": "tsx ./scripts/ops-txt-to-json.ts"
   },
   "devDependencies": {
     "@types/node": "^25.8.0",

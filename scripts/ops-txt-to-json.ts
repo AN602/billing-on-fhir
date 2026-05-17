@@ -3,7 +3,7 @@ import { basename, extname, resolve } from "node:path";
 
 type IcdCode = {
   code: string;
-  desc: string;
+  description: string;
 };
 
 type CliArgs = {
@@ -66,7 +66,7 @@ async function main(): Promise<void> {
 
     data.push({
       code: code.trim(),
-      desc: desc.trim(),
+      description: desc.trim(),
     });
   }
 
