@@ -516,6 +516,7 @@ __metadata:
   resolution: "billing-on-fhir@workspace:."
   dependencies:
     "@types/node": "npm:^25.8.0"
+    simple-xml-to-json: "npm:^1.2.7"
     tsx: "npm:^4.22.0"
     typescript: "npm:^6.0.3"
     vitest: "npm:^4.1.6"
@@ -1023,6 +1024,13 @@ __metadata:
   version: 2.0.0
   resolution: "siginfo@npm:2.0.0"
   checksum: 10c0/3def8f8e516fbb34cb6ae415b07ccc5d9c018d85b4b8611e3dc6f8be6d1899f693a4382913c9ed51a06babb5201639d76453ab297d1c54a456544acf5c892e34
+  languageName: node
+  linkType: hard
+
+"simple-xml-to-json@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "simple-xml-to-json@npm:1.2.7"
+  checksum: 10c0/83b7412101634e07a7c02458e3c9d60298e597f0029c642aa0a4a89e3665074663d68acf24e18576be4ae20a6195e0e9d8660c6967660409aa5c9660de48ea49
   languageName: node
   linkType: hard
 
