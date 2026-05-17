@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { normalizeForExactMatch, splitWords } from "../util/textNormalize.js";
 
 type OpsCatalogNode = {
@@ -33,7 +34,8 @@ function flattenNodes(nodes: OpsCatalogNode[], into: OpsCatalogNode[]): void {
 }
 
 function parseCatalog(): OpsCatalogNode[] {
-  const catalogPath = resolve(process.cwd(), "resources", "ops2026syst_kodes.json");
+  const moduleDir = fileURLToPath(new URL(".", import.meta.url));
+  const catalogPath = resolve(moduleDir, "../../resources/ops2026syst_kodes.json");
   const raw = readFileSync(catalogPath, "utf-8");
   const parsed = JSON.parse(raw) as unknown;
   if (!Array.isArray(parsed)) {
@@ -92,4 +94,8 @@ export function getOpsCatalogIndex(): OpsCatalogIndex {
     cachedIndex = buildIndex();
   }
   return cachedIndex;
+}
+
+export function clearOpsCatalogCacheForTests(): void {
+  cachedIndex = undefined;
 }

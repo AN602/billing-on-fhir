@@ -22,4 +22,36 @@ describe("normalizeComposition", () => {
     expect(result[0].text).toContain("C83.3");
     expect(result[0].normalizedKind).toBe("diagnosis_section");
   });
+
+  it("keeps section IDs stable when unrelated section is inserted", () => {
+    const base = {
+      resourceType: "Composition",
+      id: "comp-2",
+      section: [
+        {
+          title: "Hauptdiagnose",
+          code: { coding: [{ code: "Hauptdiagnose" }] },
+          text: { div: "<div><p>C83.3</p></div>" },
+        },
+      ],
+    } as never;
+
+    const withInsert = {
+      ...base,
+      section: [
+        {
+          title: "Administrative",
+          code: { coding: [{ code: "AllgemeinerEintrag" }] },
+          text: { div: "<div><p>note</p></div>" },
+        },
+        ...base.section,
+      ],
+    } as never;
+
+    const baseItem = normalizeComposition(base)[0];
+    const insertedItem = normalizeComposition(withInsert).find((item) => item.source.sectionCode === "Hauptdiagnose");
+
+    expect(baseItem?.id).toBeDefined();
+    expect(insertedItem?.id).toBe(baseItem?.id);
+  });
 });

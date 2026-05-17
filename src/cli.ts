@@ -10,6 +10,7 @@
 
 import { mkdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import { parseBundle } from "./fhir/parseBundle.js";
 import { buildResourceIndex } from "./fhir/resourceIndex.js";
 import { validateBundle } from "./fhir/validators.js";
@@ -25,7 +26,7 @@ type CliArgs = {
   debug: boolean;
 };
 
-function parseArgs(argv: string[]): CliArgs {
+export function parseArgs(argv: string[]): CliArgs {
   const args = argv.slice(2);
   let inputPath = "";
   let outDir = "./out";
@@ -61,6 +62,10 @@ function parseArgs(argv: string[]): CliArgs {
     throw new Error("Usage: yarn start <fhir-bundle.json> --out ./out [--json-only|--html-only] [--debug]");
   }
 
+  if (jsonOnly && htmlOnly) {
+    throw new Error("Flags --json-only and --html-only are mutually exclusive.");
+  }
+
   return { inputPath, outDir, jsonOnly, htmlOnly, debug };
 }
 
@@ -92,7 +97,11 @@ async function main(): Promise<void> {
   }
 }
 
-main().catch((error: unknown) => {
-  console.error("Failed to read or process bundle", error);
-  process.exitCode = 1;
-});
+const isMainModule = process.argv[1] ? import.meta.url === pathToFileURL(process.argv[1]).href : false;
+
+if (isMainModule) {
+  main().catch((error: unknown) => {
+    console.error("Failed to read or process bundle", error);
+    process.exitCode = 1;
+  });
+}

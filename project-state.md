@@ -23,8 +23,10 @@ Pipeline:
 2. Bundle parsing (`src/fhir/parseBundle.ts`)
 3. Resource indexing and basic stats (`src/fhir/resourceIndex.ts`)
 4. Data-quality checks (`src/fhir/validators.ts`)
+   - Encounter presence warning is emitted only when neither `Encounter` nor `Account` exists
 5. Case + evidence construction (`src/billing/buildBillingCase.ts`)
 6. Composition section normalization (`src/billing/normalizeComposition.ts`)
+   - Evidence item IDs are deterministic content-based IDs (stable across section reordering/insertion for unchanged section content)
 7. Document/section classification (`src/billing/classifyComposition.ts`)
 8. Deterministic code extraction (`src/billing/extractCodes.ts`):
    - explicit OPS/ICD regex matches
@@ -43,6 +45,7 @@ Pipeline:
 ### Add/adjust data-quality warnings
 
 - `src/fhir/validators.ts` - bundle-level and cross-resource warning logic
+- `src/fhir/referenceResolver.ts` - shared reference existence checks used by validators
 - `src/fhir/resourceIndex.ts` - indexing-time warnings (duplicates, empty entries)
 
 ### Change case summary extraction
@@ -65,6 +68,7 @@ Pipeline:
 
 - `src/config/codeRegexes.ts` - OPS/ICD regex patterns and helpers
 - `src/config/opsCatalog.ts` - OPS catalog loading, hierarchy flattening, and in-memory lookup indexes for description matching
+  - catalog path is resolved relative to module location (not process cwd)
 - `src/billing/matchOpsDescriptions.ts` - exact OPS description matching against normalized evidence text
 - `src/util/textNormalize.ts` - shared deterministic normalization/tokenization for exact text matching
 - `src/billing/extractCodes.ts` - candidate creation, dedupe, regex + OPS description extraction, and kind-driven needs-review fallback logic (ICD/OPS/unknown)
@@ -80,6 +84,7 @@ Pipeline:
 ### Change CLI behavior
 
 - `src/cli.ts` - flags, defaults, orchestration, error handling
+  - `--json-only` and `--html-only` are mutually exclusive
 
 ### Change tests/add coverage
 
@@ -96,6 +101,9 @@ Existing test coverage includes:
 - `normalizeComposition`
 - `resourceIndex`
 - `buildBillingCase`
+- `validators`
+- `opsCatalog`
+- `cli` argument parsing
 - canonical fixture integration via `FHIR_example.json`
 
 Run tests:

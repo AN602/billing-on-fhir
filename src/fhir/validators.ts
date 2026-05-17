@@ -13,9 +13,11 @@ import type { DataQualityIssue } from "../billing/dossierTypes.js";
 import type { Bundle, DiagnosticReport, Encounter } from "./types.js";
 import type { ResourceIndex } from "./resourceIndex.js";
 import { isEncounterStatusPeriodInconsistent } from "../util/dateUtils.js";
+import { createReferenceResolver } from "./referenceResolver.js";
 
 export function validateBundle(bundle: Bundle, index: ResourceIndex): DataQualityIssue[] {
   const issues: DataQualityIssue[] = [...index.issues];
+  const resolver = createReferenceResolver(index);
 
   if (!bundle.entry.length) {
     issues.push({ severity: "warning", code: "EMPTY_BUNDLE", message: "Bundle has no entries." });
@@ -24,7 +26,9 @@ export function validateBundle(bundle: Bundle, index: ResourceIndex): DataQualit
   if (!index.getByType("Patient").length) {
     issues.push({ severity: "warning", code: "MISSING_PATIENT", message: "No Patient resource found in bundle." });
   }
-  if (!index.getByType("Encounter").length) {
+  const hasEncounter = index.getByType("Encounter").length > 0;
+  const hasAccount = index.getByType("Account").length > 0;
+  if (!hasEncounter && !hasAccount) {
     issues.push({ severity: "warning", code: "MISSING_ENCOUNTER", message: "No Encounter resource found in bundle." });
   }
 
@@ -40,7 +44,7 @@ export function validateBundle(bundle: Bundle, index: ResourceIndex): DataQualit
 
     for (const diagnosis of encounter.diagnosis ?? []) {
       const ref = diagnosis.condition?.reference;
-      if (ref && !index.has(ref)) {
+      if (ref && !resolver.resolve(ref, "Encounter.diagnosis.condition")) {
         issues.push({
           severity: "warning",
           code: "MISSING_ENCOUNTER_CONDITION",
@@ -54,7 +58,7 @@ export function validateBundle(bundle: Bundle, index: ResourceIndex): DataQualit
   for (const report of index.getByType("DiagnosticReport") as DiagnosticReport[]) {
     for (const resultRef of report.result ?? []) {
       const ref = resultRef.reference;
-      if (ref && !index.has(ref)) {
+      if (ref && !resolver.resolve(ref, "DiagnosticReport.result")) {
         issues.push({
           severity: "warning",
           code: "MISSING_DIAGNOSTIC_RESULT",

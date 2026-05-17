@@ -20,14 +20,36 @@ function sectionCode(section: CompositionSection): string | undefined {
   return section.code?.coding?.find((coding) => typeof coding.code === "string")?.code;
 }
 
+function slug(value: string): string {
+  return value.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-+|-+$/g, "") || "unknown";
+}
+
+function hashText(value: string): string {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i += 1) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+}
+
+function buildSectionId(compositionId: string | undefined, code: string | undefined, title: string, text: string): string {
+  const source = `${code ?? ""}|${title}|${text}`;
+  const digest = hashText(source);
+  const codeOrTitle = slug(code ?? title);
+  return `${compositionId ?? "composition"}-section-${codeOrTitle}-${digest}`;
+}
+
 export function normalizeComposition(composition: Composition): ClinicalEvidenceItem[] {
   const sections = composition.section ?? [];
   if (!sections.length) {
     return [];
   }
 
+  const duplicateCounters = new Map<string, number>();
+
   return sections
-    .map((section, index) => {
+    .map((section) => {
       const text = htmlToText(section.text?.div);
       const title = section.title ?? "";
       const code = sectionCode(section);
@@ -37,8 +59,13 @@ export function normalizeComposition(composition: Composition): ClinicalEvidence
         return undefined;
       }
 
+      const baseId = buildSectionId(composition.id, code, title, text);
+      const seen = duplicateCounters.get(baseId) ?? 0;
+      duplicateCounters.set(baseId, seen + 1);
+      const stableId = seen === 0 ? baseId : `${baseId}-${seen + 1}`;
+
       return {
-        id: `${composition.id ?? "composition"}-section-${index + 1}`,
+        id: stableId,
         patientRef: composition.subject?.reference,
         encounterRef: composition.encounter?.reference,
         source: {

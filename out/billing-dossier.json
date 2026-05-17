@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T08:31:20.191Z",
+  "generatedAt": "2026-05-17T09:22:14.324Z",
   "input": {
     "filename": "./FHIR_example.json",
     "bundleType": "searchset",
@@ -76,7 +76,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -87,7 +87,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -98,7 +98,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -109,7 +109,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -120,7 +120,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -131,7 +131,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -142,7 +142,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -153,7 +153,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -164,7 +164,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -175,7 +175,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -186,7 +186,7 @@
         "method": "regex",
         "confidence": 0.95,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -197,7 +197,7 @@
         "method": "ops_description_exact",
         "confidence": 0.92,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -208,7 +208,7 @@
         "method": "ops_description_exact",
         "confidence": 0.92,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -219,7 +219,7 @@
         "method": "ops_description_exact",
         "confidence": 0.92,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       },
@@ -230,7 +230,7 @@
         "method": "ops_description_exact",
         "confidence": 0.92,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
         ],
         "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
       }
@@ -243,62 +243,62 @@
         "method": "manual",
         "confidence": 0,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-1",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-5",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-6",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-8",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-9",
-          "P07d7b164783836ba1b-section-2",
-          "P125b783bd96b04e134-section-1",
-          "P125b783bd96b04e134-section-2",
-          "P1d43a21849805f023e-section-1",
-          "P23a50ff2d0a01a9762-section-1",
-          "P23a50ff2d0a01a9762-section-2",
-          "P241aacf1b61cdecfab-section-1",
-          "P241aacf1b61cdecfab-section-2",
-          "P241aacf1b61cdecfab-section-3",
-          "P3fffec9b68a7b64256-section-1",
-          "P3fffec9b68a7b64256-section-2",
-          "P401314481fd755e702-section-1",
-          "P401314481fd755e702-section-2",
-          "P401314481fd755e702-section-3",
-          "P4da2544e4320ac1cce-section-1",
-          "P4da2544e4320ac1cce-section-2",
-          "P6200e8d6ebf3e93052-section-1",
-          "P64810125f71d9e4d03-section-1",
-          "P64810125f71d9e4d03-section-2",
-          "P902864c8929757140b-section-1",
-          "P902864c8929757140b-section-2",
-          "P902864c8929757140b-section-3",
-          "Pb0d7f74ead284d7bb0-section-1",
-          "Pb72533274aa0c3c2b9-section-1",
-          "Pb72533274aa0c3c2b9-section-2",
-          "Pbc91154f2d8ccfcc37-section-3",
-          "Pbc91154f2d8ccfcc37-section-4",
-          "Pbc91154f2d8ccfcc37-section-5",
-          "Pbc91154f2d8ccfcc37-section-6",
-          "Pbc91154f2d8ccfcc37-section-7",
-          "Pbc91154f2d8ccfcc37-section-8",
-          "Pbc91154f2d8ccfcc37-section-9",
-          "Pbc91154f2d8ccfcc37-section-10",
-          "Pbc91154f2d8ccfcc37-section-11",
-          "Pbc91154f2d8ccfcc37-section-12",
-          "Pbda10c786f33495f97-section-1",
-          "Pc178438caf3c3790b8-section-1",
-          "Pc178438caf3c3790b8-section-2",
-          "Pc178438caf3c3790b8-section-3",
-          "Pc831d219c75d731335-section-1",
-          "Pcbdc75a3171b466650-section-1",
-          "Pcbdc75a3171b466650-section-2",
-          "Pd61fb6523f343a2d38-section-1",
-          "Pd61fb6523f343a2d38-section-2",
-          "Pd61fb6523f343a2d38-section-3",
-          "Pe0de0b96fca67129db-section-1",
-          "Pe0de0b96fca67129db-section-2",
-          "Pe927044d6826a77e43-section-1",
-          "Pfacfac944a90dfce52-section-1",
-          "Pfacfac944a90dfce52-section-2",
-          "Pfacfac944a90dfce52-section-3"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-einleitung-188x1ar",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-anamnese-14rzjt3",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-bildgebungsbefunde-lqs9oh",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-aufnahmemedikation-byfvc2",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-therapieempfehlung-snpepe",
+          "P07d7b164783836ba1b-section-beurteilung-mi2hr8",
+          "P125b783bd96b04e134-section-fragestellungindikation-1t7arof",
+          "P125b783bd96b04e134-section-untersuchungsbefund-9wishf",
+          "P1d43a21849805f023e-section-befund-1fd6ouz",
+          "P23a50ff2d0a01a9762-section-fragestellungindikation-1rtvjey",
+          "P23a50ff2d0a01a9762-section-klinischenangaben-5o749p",
+          "P241aacf1b61cdecfab-section-fragestellungindikation-ldfplj",
+          "P241aacf1b61cdecfab-section-klinischenangaben-v618oi",
+          "P241aacf1b61cdecfab-section-beurteilung-1896hmh",
+          "P3fffec9b68a7b64256-section-fragestellungindikation-1xl158s",
+          "P3fffec9b68a7b64256-section-vordiagnosen-8uron",
+          "P401314481fd755e702-section-fragestellungindikation-l62rln",
+          "P401314481fd755e702-section-untersuchungsmaterial-8e4ygv",
+          "P401314481fd755e702-section-befundkeime-1ft6hvz",
+          "P4da2544e4320ac1cce-section-fragestellungindikation-ldfplj",
+          "P4da2544e4320ac1cce-section-klinischenangaben-v618oi",
+          "P6200e8d6ebf3e93052-section-durchgefuehrtetherapie-wdawc1",
+          "P64810125f71d9e4d03-section-fragestellungindikation-q6ofpp",
+          "P64810125f71d9e4d03-section-klinischenangaben-1awm9b",
+          "P902864c8929757140b-section-fragestellungindikation-1rtvjey",
+          "P902864c8929757140b-section-klinischenangaben-5o749p",
+          "P902864c8929757140b-section-beurteilung-1aybv7g",
+          "Pb0d7f74ead284d7bb0-section-befund-1wjmg0d",
+          "Pb72533274aa0c3c2b9-section-fragestellungindikation-q6ofpp",
+          "Pb72533274aa0c3c2b9-section-klinischenangaben-1awm9b",
+          "Pbc91154f2d8ccfcc37-section-aufnahmegrund-uenh9c",
+          "Pbc91154f2d8ccfcc37-section-anamnese-14rzjt3",
+          "Pbc91154f2d8ccfcc37-section-sozialeanamnese-36yjda",
+          "Pbc91154f2d8ccfcc37-section-familienanamnese-k46ypm",
+          "Pbc91154f2d8ccfcc37-section-berufsanamnese-1l5mclb",
+          "Pbc91154f2d8ccfcc37-section-aufnahmemedikation-6o40y1",
+          "Pbc91154f2d8ccfcc37-section-aufnahmebefund-kkowex",
+          "Pbc91154f2d8ccfcc37-section-verlaufepikrise-m8amlp",
+          "Pbc91154f2d8ccfcc37-section-therapieempfehlung-1raw5o",
+          "Pbc91154f2d8ccfcc37-section-medikation-10xzalo",
+          "Pbda10c786f33495f97-section-fragestellungindikation-cnvpma",
+          "Pc178438caf3c3790b8-section-fragestellungindikation-q6ofpp",
+          "Pc178438caf3c3790b8-section-klinischenangaben-1awm9b",
+          "Pc178438caf3c3790b8-section-beurteilung-34w86t",
+          "Pc831d219c75d731335-section-vorgeseheneoperation-sd6rzs",
+          "Pcbdc75a3171b466650-section-fragestellungindikation-ldfplj",
+          "Pcbdc75a3171b466650-section-klinischenangaben-v618oi",
+          "Pd61fb6523f343a2d38-section-fragestellungindikation-qzg57j",
+          "Pd61fb6523f343a2d38-section-untersuchungsmaterial-2x6l6z",
+          "Pd61fb6523f343a2d38-section-befundkeime-156hj9",
+          "Pe0de0b96fca67129db-section-fragestellungindikation-1t7arof",
+          "Pe0de0b96fca67129db-section-untersuchungsbefund-112a6db",
+          "Pe927044d6826a77e43-section-befund-gf3usu",
+          "Pfacfac944a90dfce52-section-fragestellungindikation-qzg57j",
+          "Pfacfac944a90dfce52-section-untersuchungsmaterial-1fclyyw",
+          "Pfacfac944a90dfce52-section-befundkeime-156hj9"
         ],
         "sourceText": "Sehr geehrte Kollegen und Kolleginnen, wir berichten über Herr Max Muster, geboren am 06.05.1968, der sich bei uns in stationärer Behandlung vom 12.10.2024 bis 20.10.2024 befand."
       },
@@ -308,11 +308,11 @@
         "method": "manual",
         "confidence": 0,
         "evidenceItemIds": [
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-2",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-3",
-          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-7",
-          "Pbc91154f2d8ccfcc37-section-1",
-          "Pbc91154f2d8ccfcc37-section-2"
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-hauptdiagnose-1o5racb",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-diagnosen-1hlshe8",
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-epikrise-18z4aw5",
+          "Pbc91154f2d8ccfcc37-section-diagnosen-21ubpd",
+          "Pbc91154f2d8ccfcc37-section-nebendiagnosen-353csr"
         ],
         "sourceText": "Primäres ZNS-Lymphom, ED 08.2024\n\nInitiale Symptomatik:\nVertikale Diplopie, Synkope, Halluzinationen, Hemiparese links, zentrale Fazialisparese rechts, Gangataxie\n\nInitiale Ausdehnung:\nStammganglien rechts, Thalamus rechts, Hypothalamus rechts, Hirnstamm, temporopolar rechts\n\nSta"
       },
@@ -322,9 +322,9 @@
         "method": "manual",
         "confidence": 0,
         "evidenceItemIds": [
-          "P07d7b164783836ba1b-section-1",
-          "P125b783bd96b04e134-section-3",
-          "Pe0de0b96fca67129db-section-3"
+          "P07d7b164783836ba1b-section-durchgefuehrtemassnahmen-190o3g1",
+          "P125b783bd96b04e134-section-durchgefuehrtemassnahmen-1h0ukw3",
+          "Pe0de0b96fca67129db-section-durchgefuehrtemassnahmen-1h0ukw3"
         ],
         "sourceText": "Konsil - Allgemeine Chirurgie"
       }
@@ -332,7 +332,7 @@
   },
   "evidence": [
     {
-      "id": "0990cad2-e112-4279-a7c6-2f8ba38c17bf-section-1",
+      "id": "0990cad2-e112-4279-a7c6-2f8ba38c17bf-section-allgemeinereintrag-1bfi1uk",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -352,7 +352,7 @@
       "extractedCodes": []
     },
     {
-      "id": "0b5ab029-2467-4059-bcf7-ebed11134cc9-section-1",
+      "id": "0b5ab029-2467-4059-bcf7-ebed11134cc9-section-allgemeinereintrag-160xz0h",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -372,7 +372,7 @@
       "extractedCodes": []
     },
     {
-      "id": "61bade55-ac78-405b-82bc-2c645000a9f3-section-1",
+      "id": "61bade55-ac78-405b-82bc-2c645000a9f3-section-allgemeinereintrag-1j8ac5k",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -392,7 +392,7 @@
       "extractedCodes": []
     },
     {
-      "id": "6a337476-dfef-4045-a714-6dee99a8eb8a-section-1",
+      "id": "6a337476-dfef-4045-a714-6dee99a8eb8a-section-allgemeinereintrag-4ha6xl",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -412,7 +412,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-1",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-einleitung-188x1ar",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -432,7 +432,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-2",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-hauptdiagnose-1o5racb",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -452,7 +452,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-3",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-diagnosen-1hlshe8",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -472,7 +472,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -497,7 +497,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -508,7 +508,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -519,7 +519,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -530,7 +530,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -541,7 +541,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -552,7 +552,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -563,7 +563,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -574,7 +574,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -585,7 +585,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -596,7 +596,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -607,7 +607,7 @@
           "method": "regex",
           "confidence": 0.95,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -618,7 +618,7 @@
           "method": "ops_description_exact",
           "confidence": 0.92,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -629,7 +629,7 @@
           "method": "ops_description_exact",
           "confidence": 0.92,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -640,7 +640,7 @@
           "method": "ops_description_exact",
           "confidence": 0.92,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         },
@@ -651,14 +651,14 @@
           "method": "ops_description_exact",
           "confidence": 0.92,
           "evidenceItemIds": [
-            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-weitere-prozeduren-1m27tap"
           ],
           "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
         }
       ]
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-5",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-anamnese-14rzjt3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -678,7 +678,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-6",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-bildgebungsbefunde-lqs9oh",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -698,7 +698,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-7",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-epikrise-18z4aw5",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -718,7 +718,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-8",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-aufnahmemedikation-byfvc2",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -738,7 +738,7 @@
       "extractedCodes": []
     },
     {
-      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-9",
+      "id": "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-therapieempfehlung-snpepe",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -758,7 +758,7 @@
       "extractedCodes": []
     },
     {
-      "id": "bc97a79d-4313-46dd-b2df-414b70c9352c-section-1",
+      "id": "bc97a79d-4313-46dd-b2df-414b70c9352c-section-allgemeinereintrag-k1f2lw",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -778,7 +778,7 @@
       "extractedCodes": []
     },
     {
-      "id": "df3abbd2-fdaa-44fc-98d8-b25ffb28aa84-section-1",
+      "id": "df3abbd2-fdaa-44fc-98d8-b25ffb28aa84-section-allgemeinereintrag-1ccetl2",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -798,7 +798,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P01e16afcb59e7a3230-section-1",
+      "id": "P01e16afcb59e7a3230-section-einfuhr-3o8u32",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -818,7 +818,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P01e16afcb59e7a3230-section-2",
+      "id": "P01e16afcb59e7a3230-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -838,7 +838,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P01e16afcb59e7a3230-section-3",
+      "id": "P01e16afcb59e7a3230-section-allgemeinereintrag-i5kdvk",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -858,7 +858,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P07d7b164783836ba1b-section-1",
+      "id": "P07d7b164783836ba1b-section-durchgefuehrtemassnahmen-190o3g1",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -878,7 +878,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P07d7b164783836ba1b-section-2",
+      "id": "P07d7b164783836ba1b-section-beurteilung-mi2hr8",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -898,7 +898,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P0984208a7b3b136f52-section-1",
+      "id": "P0984208a7b3b136f52-section-allgemeinereintrag-1si8emg",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -918,7 +918,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P0de39f9a518396ac02-section-1",
+      "id": "P0de39f9a518396ac02-section-allgemeinereintrag-1nv64qb",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -938,7 +938,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P125b783bd96b04e134-section-1",
+      "id": "P125b783bd96b04e134-section-fragestellungindikation-1t7arof",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -958,7 +958,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P125b783bd96b04e134-section-2",
+      "id": "P125b783bd96b04e134-section-untersuchungsbefund-9wishf",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -978,7 +978,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P125b783bd96b04e134-section-3",
+      "id": "P125b783bd96b04e134-section-durchgefuehrtemassnahmen-1h0ukw3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -998,7 +998,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P132cb4ba2084bea603-section-1",
+      "id": "P132cb4ba2084bea603-section-allgemeinereintrag-1v4ou7g",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1018,7 +1018,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P1d43a21849805f023e-section-1",
+      "id": "P1d43a21849805f023e-section-befund-1fd6ouz",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1038,7 +1038,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P2376e8e6c3002480cf-section-1",
+      "id": "P2376e8e6c3002480cf-section-allgemeinereintrag-1or50qo",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1058,7 +1058,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P23a50ff2d0a01a9762-section-1",
+      "id": "P23a50ff2d0a01a9762-section-fragestellungindikation-1rtvjey",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1078,7 +1078,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P23a50ff2d0a01a9762-section-2",
+      "id": "P23a50ff2d0a01a9762-section-klinischenangaben-5o749p",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1098,7 +1098,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P241aacf1b61cdecfab-section-1",
+      "id": "P241aacf1b61cdecfab-section-fragestellungindikation-ldfplj",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1118,7 +1118,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P241aacf1b61cdecfab-section-2",
+      "id": "P241aacf1b61cdecfab-section-klinischenangaben-v618oi",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1138,7 +1138,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P241aacf1b61cdecfab-section-3",
+      "id": "P241aacf1b61cdecfab-section-beurteilung-1896hmh",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1158,7 +1158,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P29bf74315969ef0c5b-section-1",
+      "id": "P29bf74315969ef0c5b-section-allgemeinereintrag-dv9vx1",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1178,7 +1178,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P2f457bc28b168e3491-section-1",
+      "id": "P2f457bc28b168e3491-section-allgemeinereintrag-1wpypru",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1198,7 +1198,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P37db7393afbefff92b-section-1",
+      "id": "P37db7393afbefff92b-section-allgemeinereintrag-12ggv64",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1218,7 +1218,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P3fffec9b68a7b64256-section-1",
+      "id": "P3fffec9b68a7b64256-section-fragestellungindikation-1xl158s",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1238,7 +1238,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P3fffec9b68a7b64256-section-2",
+      "id": "P3fffec9b68a7b64256-section-vordiagnosen-8uron",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1258,7 +1258,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P401314481fd755e702-section-1",
+      "id": "P401314481fd755e702-section-fragestellungindikation-l62rln",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1278,7 +1278,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P401314481fd755e702-section-2",
+      "id": "P401314481fd755e702-section-untersuchungsmaterial-8e4ygv",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1298,7 +1298,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P401314481fd755e702-section-3",
+      "id": "P401314481fd755e702-section-befundkeime-1ft6hvz",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1318,7 +1318,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P4bdc7d5ddabb461bb8-section-1",
+      "id": "P4bdc7d5ddabb461bb8-section-allgemeinereintrag-1ct3thc",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1338,7 +1338,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P4d6e4aa6a97ef1b3ea-section-1",
+      "id": "P4d6e4aa6a97ef1b3ea-section-anordnung-670ao",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1358,7 +1358,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P4da2544e4320ac1cce-section-1",
+      "id": "P4da2544e4320ac1cce-section-fragestellungindikation-ldfplj",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1378,7 +1378,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P4da2544e4320ac1cce-section-2",
+      "id": "P4da2544e4320ac1cce-section-klinischenangaben-v618oi",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1398,7 +1398,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P4ee43e5ba601b5bc5a-section-1",
+      "id": "P4ee43e5ba601b5bc5a-section-allgemeinereintrag-5hs1h",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1418,7 +1418,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P5140fa9d16b94df625-section-1",
+      "id": "P5140fa9d16b94df625-section-anordnung-16lqb9o",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1438,7 +1438,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P542d0aef81bd30d9fa-section-1",
+      "id": "P542d0aef81bd30d9fa-section-allgemeinereintrag-1hvb1sb",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1458,7 +1458,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P5571e0bf2c963720f1-section-1",
+      "id": "P5571e0bf2c963720f1-section-allgemeinereintrag-k8saav",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1478,7 +1478,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P56391baf617eb4e26a-section-1",
+      "id": "P56391baf617eb4e26a-section-allgemeinereintrag-1s8e7pg",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1498,7 +1498,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P57ac96d61a149a476b-section-1",
+      "id": "P57ac96d61a149a476b-section-allgemeinereintrag-1b1gev6",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1518,7 +1518,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P6200e8d6ebf3e93052-section-1",
+      "id": "P6200e8d6ebf3e93052-section-durchgefuehrtetherapie-wdawc1",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1538,7 +1538,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P64810125f71d9e4d03-section-1",
+      "id": "P64810125f71d9e4d03-section-fragestellungindikation-q6ofpp",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1558,7 +1558,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P64810125f71d9e4d03-section-2",
+      "id": "P64810125f71d9e4d03-section-klinischenangaben-1awm9b",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1578,7 +1578,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P67d25f7aab1db0ddd1-section-1",
+      "id": "P67d25f7aab1db0ddd1-section-allgemeinereintrag-14mjal8",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1598,7 +1598,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P68be4befbc1f032ef9-section-1",
+      "id": "P68be4befbc1f032ef9-section-allgemeinereintrag-1si8emg",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1618,7 +1618,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P714cbcce63007cd3cb-section-1",
+      "id": "P714cbcce63007cd3cb-section-allgemeinereintrag-hdxxza",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1638,7 +1638,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P71782a5eb7edd19725-section-1",
+      "id": "P71782a5eb7edd19725-section-allgemeinereintrag-1df9uz6",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1658,7 +1658,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P7ec1032ab60dfa949c-section-1",
+      "id": "P7ec1032ab60dfa949c-section-allgemeinereintrag-1eldl5q",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1678,7 +1678,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P835ff98f0d864c1e0d-section-1",
+      "id": "P835ff98f0d864c1e0d-section-einfuhr-miuhvd",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1698,7 +1698,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P835ff98f0d864c1e0d-section-2",
+      "id": "P835ff98f0d864c1e0d-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1718,7 +1718,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P835ff98f0d864c1e0d-section-3",
+      "id": "P835ff98f0d864c1e0d-section-allgemeinereintrag-1j6cvof",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1738,7 +1738,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P87a0caa68179688033-section-1",
+      "id": "P87a0caa68179688033-section-allgemeinereintrag-zz919g",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1758,7 +1758,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P902864c8929757140b-section-1",
+      "id": "P902864c8929757140b-section-fragestellungindikation-1rtvjey",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1778,7 +1778,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P902864c8929757140b-section-2",
+      "id": "P902864c8929757140b-section-klinischenangaben-5o749p",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1798,7 +1798,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P902864c8929757140b-section-3",
+      "id": "P902864c8929757140b-section-beurteilung-1aybv7g",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1818,7 +1818,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P93fafd11a15002bc5f-section-1",
+      "id": "P93fafd11a15002bc5f-section-einfuhr-miuhvd",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1838,7 +1838,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P93fafd11a15002bc5f-section-2",
+      "id": "P93fafd11a15002bc5f-section-ausfuhr-1bfbetb",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1858,7 +1858,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P93fafd11a15002bc5f-section-3",
+      "id": "P93fafd11a15002bc5f-section-allgemeinereintrag-brcru0",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1878,7 +1878,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P97402054aa0ee48a3c-section-1",
+      "id": "P97402054aa0ee48a3c-section-allgemeinereintrag-1xg21kt",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1898,7 +1898,7 @@
       "extractedCodes": []
     },
     {
-      "id": "P978ab66dd6d5fde12c-section-1",
+      "id": "P978ab66dd6d5fde12c-section-allgemeinereintrag-1ldwfpv",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1918,7 +1918,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pa2af665ad50ce349d7-section-1",
+      "id": "Pa2af665ad50ce349d7-section-allgemeinereintrag-y8zo36",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1938,7 +1938,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pa607347f39af437f50-section-1",
+      "id": "Pa607347f39af437f50-section-allgemeinereintrag-15mwlbo",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1958,7 +1958,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pa795167b5b3605d843-section-1",
+      "id": "Pa795167b5b3605d843-section-allgemeinereintrag-1d57di8",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1978,7 +1978,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Paa5e443bd0d576bf52-section-1",
+      "id": "Paa5e443bd0d576bf52-section-einfuhr-miuhvd",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -1998,7 +1998,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Paa5e443bd0d576bf52-section-2",
+      "id": "Paa5e443bd0d576bf52-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2018,7 +2018,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Paa5e443bd0d576bf52-section-3",
+      "id": "Paa5e443bd0d576bf52-section-allgemeinereintrag-1j6cvof",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2038,7 +2038,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pafcc436c4b3216632d-section-1",
+      "id": "Pafcc436c4b3216632d-section-allgemeinereintrag-1xg21kt",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2058,7 +2058,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb037ce41258fdcdad5-section-1",
+      "id": "Pb037ce41258fdcdad5-section-allgemeinereintrag-bjmxr8",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2078,7 +2078,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb0d7f74ead284d7bb0-section-1",
+      "id": "Pb0d7f74ead284d7bb0-section-befund-1wjmg0d",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2098,7 +2098,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb2ccb7f4c5fc7415fe-section-1",
+      "id": "Pb2ccb7f4c5fc7415fe-section-allgemeinereintrag-10c7nul",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2118,7 +2118,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb72533274aa0c3c2b9-section-1",
+      "id": "Pb72533274aa0c3c2b9-section-fragestellungindikation-q6ofpp",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2138,7 +2138,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb72533274aa0c3c2b9-section-2",
+      "id": "Pb72533274aa0c3c2b9-section-klinischenangaben-1awm9b",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2158,7 +2158,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pb80026943a4eb10bed-section-1",
+      "id": "Pb80026943a4eb10bed-section-allgemeinereintrag-1cuao6x",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2178,7 +2178,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbbd6136576dfac0be1-section-1",
+      "id": "Pbbd6136576dfac0be1-section-allgemeinereintrag-mtmza4",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2198,7 +2198,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc2fbaad4df18a40ca-section-1",
+      "id": "Pbc2fbaad4df18a40ca-section-allgemeinereintrag-2otvfp",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2218,7 +2218,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-1",
+      "id": "Pbc91154f2d8ccfcc37-section-diagnosen-21ubpd",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2238,7 +2238,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-2",
+      "id": "Pbc91154f2d8ccfcc37-section-nebendiagnosen-353csr",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2258,7 +2258,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-3",
+      "id": "Pbc91154f2d8ccfcc37-section-aufnahmegrund-uenh9c",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2278,7 +2278,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-4",
+      "id": "Pbc91154f2d8ccfcc37-section-anamnese-14rzjt3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2298,7 +2298,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-5",
+      "id": "Pbc91154f2d8ccfcc37-section-sozialeanamnese-36yjda",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2318,7 +2318,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-6",
+      "id": "Pbc91154f2d8ccfcc37-section-familienanamnese-k46ypm",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2338,7 +2338,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-7",
+      "id": "Pbc91154f2d8ccfcc37-section-berufsanamnese-1l5mclb",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2358,7 +2358,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-8",
+      "id": "Pbc91154f2d8ccfcc37-section-aufnahmemedikation-6o40y1",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2378,7 +2378,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-9",
+      "id": "Pbc91154f2d8ccfcc37-section-aufnahmebefund-kkowex",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2398,7 +2398,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-10",
+      "id": "Pbc91154f2d8ccfcc37-section-verlaufepikrise-m8amlp",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2418,7 +2418,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-11",
+      "id": "Pbc91154f2d8ccfcc37-section-therapieempfehlung-1raw5o",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2438,7 +2438,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbc91154f2d8ccfcc37-section-12",
+      "id": "Pbc91154f2d8ccfcc37-section-medikation-10xzalo",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2458,7 +2458,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pbda10c786f33495f97-section-1",
+      "id": "Pbda10c786f33495f97-section-fragestellungindikation-cnvpma",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2478,7 +2478,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pc178438caf3c3790b8-section-1",
+      "id": "Pc178438caf3c3790b8-section-fragestellungindikation-q6ofpp",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2498,7 +2498,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pc178438caf3c3790b8-section-2",
+      "id": "Pc178438caf3c3790b8-section-klinischenangaben-1awm9b",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2518,7 +2518,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pc178438caf3c3790b8-section-3",
+      "id": "Pc178438caf3c3790b8-section-beurteilung-34w86t",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2538,7 +2538,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pc31b62a10021f04cdf-section-1",
+      "id": "Pc31b62a10021f04cdf-section-allgemeinereintrag-wm4es9",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2558,7 +2558,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pc831d219c75d731335-section-1",
+      "id": "Pc831d219c75d731335-section-vorgeseheneoperation-sd6rzs",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2578,7 +2578,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pca3bcd4591818bbde7-section-1",
+      "id": "Pca3bcd4591818bbde7-section-allgemeinereintrag-1upezel",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2598,7 +2598,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcbdc75a3171b466650-section-1",
+      "id": "Pcbdc75a3171b466650-section-fragestellungindikation-ldfplj",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2618,7 +2618,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcbdc75a3171b466650-section-2",
+      "id": "Pcbdc75a3171b466650-section-klinischenangaben-v618oi",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2638,7 +2638,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcc0a831e49bf36a599-section-1",
+      "id": "Pcc0a831e49bf36a599-section-allgemeinereintrag-64tl13",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2658,7 +2658,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcc992404385869a62b-section-1",
+      "id": "Pcc992404385869a62b-section-einfuhr-yi97zh",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2678,7 +2678,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcc992404385869a62b-section-2",
+      "id": "Pcc992404385869a62b-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2698,7 +2698,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pcc992404385869a62b-section-3",
+      "id": "Pcc992404385869a62b-section-allgemeinereintrag-95nej3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2718,7 +2718,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pd61fb6523f343a2d38-section-1",
+      "id": "Pd61fb6523f343a2d38-section-fragestellungindikation-qzg57j",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2738,7 +2738,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pd61fb6523f343a2d38-section-2",
+      "id": "Pd61fb6523f343a2d38-section-untersuchungsmaterial-2x6l6z",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2758,7 +2758,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pd61fb6523f343a2d38-section-3",
+      "id": "Pd61fb6523f343a2d38-section-befundkeime-156hj9",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2778,7 +2778,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pd6ac77757d07ed9532-section-1",
+      "id": "Pd6ac77757d07ed9532-section-befund-1treknv",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2798,7 +2798,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pdad7c9f674fb368eb4-section-1",
+      "id": "Pdad7c9f674fb368eb4-section-allgemeinereintrag-10zvxxj",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2818,7 +2818,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pdb57fd7b48bddfaf2d-section-1",
+      "id": "Pdb57fd7b48bddfaf2d-section-einfuhr-dzcnu7",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2838,7 +2838,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pdb57fd7b48bddfaf2d-section-2",
+      "id": "Pdb57fd7b48bddfaf2d-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2858,7 +2858,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pdb57fd7b48bddfaf2d-section-3",
+      "id": "Pdb57fd7b48bddfaf2d-section-allgemeinereintrag-49e0it",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2878,7 +2878,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe08db8543f0b71919f-section-1",
+      "id": "Pe08db8543f0b71919f-section-allgemeinereintrag-16vjh1a",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2898,7 +2898,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe0de0b96fca67129db-section-1",
+      "id": "Pe0de0b96fca67129db-section-fragestellungindikation-1t7arof",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2918,7 +2918,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe0de0b96fca67129db-section-2",
+      "id": "Pe0de0b96fca67129db-section-untersuchungsbefund-112a6db",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2938,7 +2938,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe0de0b96fca67129db-section-3",
+      "id": "Pe0de0b96fca67129db-section-durchgefuehrtemassnahmen-1h0ukw3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2958,7 +2958,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe1c482c68822f6755e-section-1",
+      "id": "Pe1c482c68822f6755e-section-einfuhr-zn4ryv",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2978,7 +2978,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe1c482c68822f6755e-section-2",
+      "id": "Pe1c482c68822f6755e-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -2998,7 +2998,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe1c482c68822f6755e-section-3",
+      "id": "Pe1c482c68822f6755e-section-allgemeinereintrag-7aox6x",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3018,7 +3018,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe725f2e3e62abefd3f-section-1",
+      "id": "Pe725f2e3e62abefd3f-section-allgemeinereintrag-1dtpo1k",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3038,7 +3038,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe927044d6826a77e43-section-1",
+      "id": "Pe927044d6826a77e43-section-befund-gf3usu",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3058,7 +3058,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pe96f5e3cb76a5c9b00-section-1",
+      "id": "Pe96f5e3cb76a5c9b00-section-allgemeinereintrag-1j7zdwh",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3078,7 +3078,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pea7ad8df964c6073e0-section-1",
+      "id": "Pea7ad8df964c6073e0-section-allgemeinereintrag-nywocs",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3098,7 +3098,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Peda9f59030ef002b24-section-1",
+      "id": "Peda9f59030ef002b24-section-einfuhr-x8rcu3",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3118,7 +3118,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Peda9f59030ef002b24-section-2",
+      "id": "Peda9f59030ef002b24-section-ausfuhr-3j2b3w",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3138,7 +3138,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Peda9f59030ef002b24-section-3",
+      "id": "Peda9f59030ef002b24-section-allgemeinereintrag-1xoll8d",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3158,7 +3158,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pf05fce25ca2c172910-section-1",
+      "id": "Pf05fce25ca2c172910-section-allgemeinereintrag-32l9vm",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3178,7 +3178,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pf283794180dc38d9db-section-1",
+      "id": "Pf283794180dc38d9db-section-allgemeinereintrag-q326vz",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3198,7 +3198,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pf9fd681e520451ea00-section-1",
+      "id": "Pf9fd681e520451ea00-section-allgemeinereintrag-mv5ndg",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3218,7 +3218,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pfacfac944a90dfce52-section-1",
+      "id": "Pfacfac944a90dfce52-section-fragestellungindikation-qzg57j",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3238,7 +3238,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pfacfac944a90dfce52-section-2",
+      "id": "Pfacfac944a90dfce52-section-untersuchungsmaterial-1fclyyw",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3258,7 +3258,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pfacfac944a90dfce52-section-3",
+      "id": "Pfacfac944a90dfce52-section-befundkeime-156hj9",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
@@ -3278,7 +3278,7 @@
       "extractedCodes": []
     },
     {
-      "id": "Pfc9aa17404b88b65a3-section-1",
+      "id": "Pfc9aa17404b88b65a3-section-allgemeinereintrag-icd4ln",
       "patientRef": "Patient/Peb48644a34fc5982ae",
       "encounterRef": "Encounter/P3de9680c9d8c453273",
       "source": {
