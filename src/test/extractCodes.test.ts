@@ -20,6 +20,53 @@ describe("extractCodesForEvidence", () => {
     expect(codes.map((c) => c.code)).toContain("C83.3");
   });
 
+  it("extracts OPS code from exact description text", () => {
+    const codes = extractCodesForEvidence({
+      id: "e-desc-1",
+      source: { resourceType: "Composition", resourceRef: "Composition/c1" },
+      normalizedKind: "procedure_section",
+      billingRelevance: "high",
+      text: "Klinische Untersuchung in Allgemeinanästhesie",
+      textSnippet: "Klinische Untersuchung in Allgemeinanästhesie",
+      extractedCodes: [],
+    } as never);
+
+    const opsByDescription = codes.find((code) => code.code === "1-100" && code.method === "ops_description_exact");
+    expect(opsByDescription).toBeDefined();
+    expect(opsByDescription?.status).toBe("explicit");
+  });
+
+  it("does not extract OPS code from partial description text", () => {
+    const codes = extractCodesForEvidence({
+      id: "e-desc-2",
+      source: { resourceType: "Composition", resourceRef: "Composition/c1" },
+      normalizedKind: "procedure_section",
+      billingRelevance: "high",
+      text: "Klinische Untersuchung",
+      textSnippet: "Klinische Untersuchung",
+      extractedCodes: [],
+    } as never);
+
+    const opsByDescription = codes.filter((code) => code.method === "ops_description_exact");
+    expect(opsByDescription).toHaveLength(0);
+  });
+
+  it("deduplicates same OPS code across regex and description match", () => {
+    const codes = extractCodesForEvidence({
+      id: "e-desc-3",
+      source: { resourceType: "Composition", resourceRef: "Composition/c1" },
+      normalizedKind: "procedure_section",
+      billingRelevance: "high",
+      text: "1-100 Klinische Untersuchung in Allgemeinanästhesie",
+      textSnippet: "1-100 Klinische Untersuchung in Allgemeinanästhesie",
+      extractedCodes: [],
+    } as never);
+
+    const matching = codes.filter((code) => code.code === "1-100");
+    expect(matching).toHaveLength(1);
+    expect(matching[0]?.method).toBe("regex");
+  });
+
   it("does not extract date values as codes", () => {
     const codes = extractCodesForEvidence({
       id: "e2",

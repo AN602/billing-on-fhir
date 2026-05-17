@@ -26,7 +26,9 @@ Pipeline:
 5. Case + evidence construction (`src/billing/buildBillingCase.ts`)
 6. Composition section normalization (`src/billing/normalizeComposition.ts`)
 7. Document/section classification (`src/billing/classifyComposition.ts`)
-8. Deterministic regex code extraction (`src/billing/extractCodes.ts`)
+8. Deterministic code extraction (`src/billing/extractCodes.ts`):
+   - explicit OPS/ICD regex matches
+   - exact OPS description string matches from `resources/ops2026syst_kodes.json`
 9. JSON and HTML rendering (`src/report/renderJson.ts`, `src/report/renderHtml.ts`)
 
 ## Where To Change What
@@ -62,7 +64,10 @@ Pipeline:
 ### Change code extraction behavior
 
 - `src/config/codeRegexes.ts` - OPS/ICD regex patterns and helpers
-- `src/billing/extractCodes.ts` - candidate creation, dedupe, and kind-driven needs-review fallback logic (ICD/OPS/unknown)
+- `src/config/opsCatalog.ts` - OPS catalog loading, hierarchy flattening, and in-memory lookup indexes for description matching
+- `src/billing/matchOpsDescriptions.ts` - exact OPS description matching against normalized evidence text
+- `src/util/textNormalize.ts` - shared deterministic normalization/tokenization for exact text matching
+- `src/billing/extractCodes.ts` - candidate creation, dedupe, regex + OPS description extraction, and kind-driven needs-review fallback logic (ICD/OPS/unknown)
 - `src/billing/reviewFallback.ts` - grouped fallback-rule metadata shared by extraction and HTML legend
 - `src/billing/llmCandidateExtractor.ts` - future inferred-code enrichment stub
 
@@ -108,6 +113,7 @@ yarn test
 
 - No full FHIR R4 conformance validation
 - No terminology lookup for ICD/OPS labels
+- OPS terminology matching is exact description-string only (after deterministic normalization); no fuzzy, synonym, or semantic matching
 - No DRG grouping
 - No final billing-code decisioning
 - LLM inference not active (stub only)

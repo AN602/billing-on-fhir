@@ -57,7 +57,7 @@ export type CandidateCode = {
   code?: string;
   label?: string;
   status: "explicit" | "inferred" | "needs_review";
-  method: "native_fhir" | "regex" | "llm" | "manual";
+  method: "native_fhir" | "regex" | "ops_description_exact" | "llm" | "manual";
   confidence: number;
   evidenceItemIds: string[];
   sourceText?: string;

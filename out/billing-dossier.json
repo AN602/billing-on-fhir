@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T08:36:39.374Z",
+  "generatedAt": "2026-05-17T08:31:20.191Z",
   "input": {
     "filename": "./FHIR_example.json",
     "bundleType": "searchset",
@@ -185,6 +185,50 @@
         "status": "explicit",
         "method": "regex",
         "confidence": 0.95,
+        "evidenceItemIds": [
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+        ],
+        "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+      },
+      {
+        "system": "OPS",
+        "code": "1-930",
+        "status": "explicit",
+        "method": "ops_description_exact",
+        "confidence": 0.92,
+        "evidenceItemIds": [
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+        ],
+        "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+      },
+      {
+        "system": "OPS",
+        "code": "9-984",
+        "status": "explicit",
+        "method": "ops_description_exact",
+        "confidence": 0.92,
+        "evidenceItemIds": [
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+        ],
+        "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+      },
+      {
+        "system": "OPS",
+        "code": "9-401",
+        "status": "explicit",
+        "method": "ops_description_exact",
+        "confidence": 0.92,
+        "evidenceItemIds": [
+          "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+        ],
+        "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+      },
+      {
+        "system": "OPS",
+        "code": "9-401.0",
+        "status": "explicit",
+        "method": "ops_description_exact",
+        "confidence": 0.92,
         "evidenceItemIds": [
           "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
         ],
@@ -562,6 +606,50 @@
           "status": "explicit",
           "method": "regex",
           "confidence": 0.95,
+          "evidenceItemIds": [
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          ],
+          "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+        },
+        {
+          "system": "OPS",
+          "code": "1-930",
+          "status": "explicit",
+          "method": "ops_description_exact",
+          "confidence": 0.92,
+          "evidenceItemIds": [
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          ],
+          "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+        },
+        {
+          "system": "OPS",
+          "code": "9-984",
+          "status": "explicit",
+          "method": "ops_description_exact",
+          "confidence": 0.92,
+          "evidenceItemIds": [
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          ],
+          "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+        },
+        {
+          "system": "OPS",
+          "code": "9-401",
+          "status": "explicit",
+          "method": "ops_description_exact",
+          "confidence": 0.92,
+          "evidenceItemIds": [
+            "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
+          ],
+          "sourceText": "12.10.2024: Infektiologisches Monitoring: Quantitative Virus-Nukleinsäurebestimmung (1-930.1)\n12.10.2024: Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2 (9-984.7)\n12.10.2024: Infektiologisches Monitoring: Infektiologisch-mikrobiologisches Monitoring bei Immunsuppression ("
+        },
+        {
+          "system": "OPS",
+          "code": "9-401.0",
+          "status": "explicit",
+          "method": "ops_description_exact",
+          "confidence": 0.92,
           "evidenceItemIds": [
             "b0a08c6f-dc53-4ee4-a83a-c242714c8144-section-4"
           ],

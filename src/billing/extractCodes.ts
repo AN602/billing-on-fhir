@@ -2,7 +2,8 @@
 //
 // Intended implementation:
 // - Apply deterministic regex patterns to ClinicalEvidenceItem.text.
-// - Return CandidateCode objects with method "regex" and status "explicit".
+// - Apply exact OPS description matching against a local OPS catalog.
+// - Return CandidateCode objects with explicit status for deterministic matches.
 // - Deduplicate codes across repeated sections while preserving all evidence references.
 // - Avoid inferring codes from diagnosis text in this module.
 //
@@ -15,17 +16,22 @@
 import { findIcdCodes, findOpsCodes } from "../config/codeRegexes.js";
 import type { CandidateCode, ClinicalEvidenceItem } from "./dossierTypes.js";
 import { fallbackReviewSystemForKind } from "./reviewFallback.js";
+import { matchOpsDescriptions } from "./matchOpsDescriptions.js";
 
 function dedupeByKey(candidates: CandidateCode[]): CandidateCode[] {
   const map = new Map<string, CandidateCode>();
   for (const candidate of candidates) {
-    const key = `${candidate.system}|${candidate.code ?? ""}|${candidate.status}|${candidate.method}`;
+    const key = `${candidate.system}|${candidate.code ?? ""}|${candidate.status}`;
     const existing = map.get(key);
     if (!existing) {
       map.set(key, candidate);
       continue;
     }
     existing.evidenceItemIds = [...new Set([...existing.evidenceItemIds, ...candidate.evidenceItemIds])];
+    existing.confidence = Math.max(existing.confidence, candidate.confidence);
+    if (existing.method !== "regex" && candidate.method === "regex") {
+      existing.method = candidate.method;
+    }
   }
   return [...map.values()];
 }
@@ -41,6 +47,16 @@ export function extractCodesForEvidence(evidence: ClinicalEvidenceItem): Candida
     sourceText: evidence.textSnippet,
   }));
 
+  const opsFromDescription = matchOpsDescriptions(evidence.text).map((match) => ({
+    system: "OPS" as const,
+    code: match.code,
+    status: "explicit" as const,
+    method: "ops_description_exact" as const,
+    confidence: 0.92,
+    evidenceItemIds: [evidence.id],
+    sourceText: evidence.textSnippet,
+  }));
+
   const icd = findIcdCodes(evidence.text).map((code) => ({
     system: "ICD-10-GM" as const,
     code,
@@ -51,7 +67,7 @@ export function extractCodesForEvidence(evidence: ClinicalEvidenceItem): Candida
     sourceText: evidence.textSnippet,
   }));
 
-  return dedupeByKey([...ops, ...icd]);
+  return dedupeByKey([...ops, ...opsFromDescription, ...icd]);
 }
 
 export function extractCodes(evidenceItems: ClinicalEvidenceItem[]): {
