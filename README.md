@@ -23,7 +23,7 @@ yarn --immutable
 ## CLI usage
 
 ```bash
-yarn start <bundle.json> --out <output-directory> [--json-only] [--html-only] [--debug]
+yarn start <bundle.json> --out <output-directory> [--json-only] [--html-only] [--debug] [--case-summary]
 ```
 
 Example:
@@ -33,6 +33,29 @@ yarn start ./FHIR_example.json --out ./out
 ```
 
 The CLI creates a HTML and JSON  dossier in the output folder. The HTML file is completely standalone and runs without any JS.
+
+### Optional LLM case summary
+
+The `--case-summary` flag enables an additional, non-blocking summary step after deterministic dossier generation.
+
+- Prompt strategy (v1): naive concatenation of all normalized section titles + text.
+- Provider: remote/local-network llama.cpp server via OpenAI-compatible HTTP API.
+- Failure behavior: summary is marked as failed and dossier generation still succeeds.
+
+Example `.env`:
+
+```bash
+LLM_BASE_URL=http://192.168.1.50:8080/v1
+LLM_API_KEY=not-required
+LLM_MODEL=gpt-oss-120b
+LLM_TIMEOUT_MS=60000
+```
+
+Example run:
+
+```bash
+yarn start ./FHIR_example.json --out ./out --case-summary
+```
 
 ## Development fixtures
 

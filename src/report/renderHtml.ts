@@ -88,6 +88,19 @@ function renderManualReviewFallbackLegend(): string {
   return `<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Group</th><th>Kinds</th><th>Review System</th><th>Meaning</th></tr></thead><tbody>${rows}</tbody></table><p><small>Applied only when deterministic extraction finds no ICD/OPS code and evidence relevance is not <code>low</code> or <code>ignore</code>.</small></p>`;
 }
 
+function renderCaseSummarySection(dossier: BillingDossier): string {
+  const summary = dossier.caseSummary;
+  if (!summary) {
+    return "<p>Not available.</p>";
+  }
+
+  if (summary.status === "generated") {
+    return `<p><strong>Model:</strong> ${esc(summary.model ?? "unknown")}</p><p>${esc(summary.text ?? "")}</p>`;
+  }
+
+  return `<p>Status: ${esc(summary.status)}</p><p><small>${esc(summary.error ?? "No additional details")}</small></p>`;
+}
+
 function slug(value: string): string {
   return value.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-").replaceAll(/^-+|-+$/g, "") || "unknown";
 }
@@ -176,6 +189,11 @@ ${renderManualReviewFallbackLegend()}
 <p>Patient: ${esc(dossier.case.patient?.name ?? dossier.case.patient?.id ?? "n/a")}</p>
 <p>Encounter period: ${esc(formatDate(dossier.case.encounter?.periodStart))} - ${esc(formatDate(dossier.case.encounter?.periodEnd))}</p>
 <p>Account: ${esc(dossier.case.account?.id ?? "n/a")}</p>
+</section>
+
+<section id="llm-case-summary">
+<h2>LLM Case Summary</h2>
+${renderCaseSummarySection(dossier)}
 </section>
 
 <section id="candidate-codes"><h2>Candidate Codes</h2>

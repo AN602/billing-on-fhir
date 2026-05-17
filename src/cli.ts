@@ -11,10 +11,12 @@
 import { mkdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { config as loadDotenv } from "dotenv";
 import { parseBundle } from "./fhir/parseBundle.js";
 import { buildResourceIndex } from "./fhir/resourceIndex.js";
 import { validateBundle } from "./fhir/validators.js";
 import { buildBillingCase } from "./billing/buildBillingCase.js";
+import { generateCaseSummary } from "./summary/generateCaseSummary.js";
 import { renderJson } from "./report/renderJson.js";
 import { renderHtml } from "./report/renderHtml.js";
 
@@ -24,6 +26,7 @@ type CliArgs = {
   jsonOnly: boolean;
   htmlOnly: boolean;
   debug: boolean;
+  caseSummary: boolean;
 };
 
 export function parseArgs(argv: string[]): CliArgs {
@@ -33,6 +36,7 @@ export function parseArgs(argv: string[]): CliArgs {
   let jsonOnly = false;
   let htmlOnly = false;
   let debug = false;
+  let caseSummary = false;
 
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];
@@ -53,6 +57,10 @@ export function parseArgs(argv: string[]): CliArgs {
       debug = true;
       continue;
     }
+    if (arg === "--case-summary") {
+      caseSummary = true;
+      continue;
+    }
     if (!arg.startsWith("-")) {
       inputPath = arg;
     }
@@ -66,10 +74,11 @@ export function parseArgs(argv: string[]): CliArgs {
     throw new Error("Flags --json-only and --html-only are mutually exclusive.");
   }
 
-  return { inputPath, outDir, jsonOnly, htmlOnly, debug };
+  return { inputPath, outDir, jsonOnly, htmlOnly, debug, caseSummary };
 }
 
 async function main(): Promise<void> {
+  loadDotenv();
   const args = parseArgs(process.argv);
   const filePath = resolve(process.cwd(), args.inputPath);
   const outDir = resolve(process.cwd(), args.outDir);
@@ -83,6 +92,24 @@ async function main(): Promise<void> {
     input: { filename: args.inputPath, bundleType: bundle.type, bundleTotal: bundle.total },
     dataQuality,
   });
+  dossier.caseSummary = await generateCaseSummary({
+    evidence: dossier.evidence,
+    config: {
+      enabled: args.caseSummary,
+      baseUrl: process.env.LLM_BASE_URL,
+      apiKey: process.env.LLM_API_KEY,
+      model: process.env.LLM_MODEL ?? "gpt-oss-120b",
+      timeoutMs: Number(process.env.LLM_TIMEOUT_MS ?? "60000"),
+    },
+  });
+
+  if (dossier.caseSummary.status === "failed") {
+    dossier.dataQuality.push({
+      severity: "warning",
+      code: "llm_summary_failed",
+      message: dossier.caseSummary.error ?? "Case summary generation failed",
+    });
+  }
 
   await mkdir(outDir, { recursive: true });
   if (!args.htmlOnly) {
@@ -94,6 +121,7 @@ async function main(): Promise<void> {
 
   if (args.debug) {
     console.log(`Generated dossier with ${dossier.evidence.length} evidence items.`);
+    console.log(`Case summary status: ${dossier.caseSummary.status}.`);
   }
 }
 

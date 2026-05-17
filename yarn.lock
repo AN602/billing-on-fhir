@@ -516,6 +516,8 @@ __metadata:
   resolution: "billing-on-fhir@workspace:."
   dependencies:
     "@types/node": "npm:^25.8.0"
+    dotenv: "npm:^17.4.2"
+    openai: "npm:^6.38.0"
     simple-xml-to-json: "npm:^1.2.7"
     tsx: "npm:^4.22.0"
     typescript: "npm:^6.0.3"
@@ -548,6 +550,13 @@ __metadata:
   version: 2.1.2
   resolution: "detect-libc@npm:2.1.2"
   checksum: 10c0/acc675c29a5649fa1fb6e255f993b8ee829e510b6b56b0910666949c80c364738833417d0edb5f90e4e46be17228b0f2b66a010513984e18b15deeeac49369c4
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^17.4.2":
+  version: 17.4.2
+  resolution: "dotenv@npm:17.4.2"
+  checksum: 10c0/164f8e77a646c8446867d5b588d26ea6005c8ea7c5eb41cf926f6113d23f2191355f6e0cfd95ea9bab98394a5b0a3f1e51a8399711b666fe55cc7b0bd745f942
   languageName: node
   linkType: hard
 
@@ -911,6 +920,23 @@ __metadata:
   version: 2.1.1
   resolution: "obug@npm:2.1.1"
   checksum: 10c0/59dccd7de72a047e08f8649e94c1015ec72f94eefb6ddb57fb4812c4b425a813bc7e7cd30c9aca20db3c59abc3c85cc7a62bb656a968741d770f4e8e02bc2e78
+  languageName: node
+  linkType: hard
+
+"openai@npm:^6.38.0":
+  version: 6.38.0
+  resolution: "openai@npm:6.38.0"
+  peerDependencies:
+    ws: ^8.18.0
+    zod: ^3.25 || ^4.0
+  peerDependenciesMeta:
+    ws:
+      optional: true
+    zod:
+      optional: true
+  bin:
+    openai: bin/cli
+  checksum: 10c0/5557c3f4c33c4232939763bce0f1d548596a7d1dfdb24a59f5177a972a369e583f196cd67e9352e6ca6379ad842e44d83f3ef993c0f320888b457bad878203ba
   languageName: node
   linkType: hard
 

@@ -79,4 +79,19 @@ describe("dossierToHtml", () => {
     expect(html).toContain("Other clinically relevant evidence");
     expect(html).toContain("unknown");
   });
+
+  it("renders generated LLM case summary", () => {
+    const dossier = buildFixtureDossier();
+    dossier.caseSummary = {
+      status: "generated",
+      provider: "llama-cpp-server",
+      model: "gpt-oss-120b",
+      promptChars: 123,
+      text: "Concise summary text",
+    };
+
+    const html = dossierToHtml(dossier);
+    expect(html).toContain("LLM Case Summary");
+    expect(html).toContain("Concise summary text");
+  });
 });

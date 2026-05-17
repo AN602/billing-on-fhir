@@ -136,10 +136,20 @@ export type BundleStats = {
   resourceTypeCounts: Record<string, number>;
 };
 
+export type BillingCaseSummaryResult = {
+  status: "generated" | "skipped" | "failed";
+  provider: "llama-cpp-server";
+  model?: string;
+  promptChars: number;
+  text?: string;
+  error?: string;
+};
+
 export type BillingDossier = {
   generatedAt: string;
   input: InputSummary;
   case: BillingCaseSummary;
+  caseSummary?: BillingCaseSummaryResult;
   candidateCodes: CandidateCodeSummary;
   evidence: ClinicalEvidenceItem[];
   dataQuality: DataQualityIssue[];

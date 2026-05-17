@@ -31,7 +31,13 @@ Pipeline:
 8. Deterministic code extraction (`src/billing/extractCodes.ts`):
    - explicit OPS/ICD regex matches
    - exact OPS description string matches from `resources/ops2026syst_kodes.json`
-9. JSON and HTML rendering (`src/report/renderJson.ts`, `src/report/renderHtml.ts`)
+9. Optional LLM case summary generation (`src/summary/generateCaseSummary.ts`)
+   - enabled by CLI flag `--case-summary`
+   - uses `.env` config via `dotenv` in CLI startup
+   - naive prompt = concatenated normalized section title + section text
+   - generated via `openai` SDK against llama.cpp OpenAI-compatible HTTP endpoint
+   - failures are non-blocking and written to data-quality warnings
+10. JSON and HTML rendering (`src/report/renderJson.ts`, `src/report/renderHtml.ts`)
 
 ## Where To Change What
 
@@ -78,8 +84,14 @@ Pipeline:
 ### Change output format
 
 - `src/report/renderJson.ts` - JSON serialization/file writing, including billing relevance legend metadata
-- `src/report/renderHtml.ts` - HTML sections/content/escaping, including billing relevance and manual-review fallback legend tables
+- `src/report/renderHtml.ts` - HTML sections/content/escaping, including billing relevance and manual-review fallback legend tables plus LLM case summary section
 - `src/billing/dossierTypes.ts` - output schema changes
+
+### Change LLM case summary behavior
+
+- `src/summary/generateCaseSummary.ts` - prompt construction, OpenAI-compatible chat completion call, timeout/error handling
+- `src/cli.ts` - `--case-summary` flag, dotenv initialization, env wiring (`LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`, `LLM_TIMEOUT_MS`)
+- `src/billing/dossierTypes.ts` - `caseSummary` result shape in dossier
 
 ### Change CLI behavior
 
@@ -104,6 +116,7 @@ Existing test coverage includes:
 - `validators`
 - `opsCatalog`
 - `cli` argument parsing
+- `caseSummary` prompt/config behavior
 - canonical fixture integration via `FHIR_example.json`
 
 Run tests:
@@ -124,4 +137,5 @@ yarn test
 - OPS terminology matching is exact description-string only (after deterministic normalization); no fuzzy, synonym, or semantic matching
 - No DRG grouping
 - No final billing-code decisioning
-- LLM inference not active (stub only)
+- LLM candidate-code inference not active (stub only)
+- LLM case summary is optional, naive concatenation-based, and non-authoritative

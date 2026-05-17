@@ -6,4 +6,9 @@ describe("parseArgs", () => {
     expect(() => parseArgs(["node", "cli", "bundle.json", "--json-only", "--html-only"]))
       .toThrowError(/mutually exclusive/i);
   });
+
+  it("parses case summary flag", () => {
+    const parsed = parseArgs(["node", "cli", "bundle.json", "--case-summary"]);
+    expect(parsed.caseSummary).toBe(true);
+  });
 });
