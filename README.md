@@ -51,11 +51,15 @@ The CLI creates a HTML and JSON  dossier in the output folder. The HTML file is 
 - Clinically relevant text without explicit codes is surfaced as `needs_review` evidence.
 - The tool does not generate legally final billing codes.
 
+### OPS codes
+- OPS codes have been downloaded from [https://www.bfarm.de/DE/Kodiersysteme/Services/Downloads/_node.html](https://www.bfarm.de/DE/Kodiersysteme/Services/Downloads/_node.html) and transformed to JSON
+
 ## Known limitations
 
 - No full FHIR conformance validation.
 - No terminology service lookup or DRG grouping.
 - Missing references are reported as warnings and do not stop report generation.
+- Year specific OPS codes validation
 
 ## Extending TIPLU rules
 
